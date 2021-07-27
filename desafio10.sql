@@ -16,3 +16,6 @@ ON ((od.ProductID = p.ProductID))
 GROUP BY p.ProductID
 HAVING AVG(od.Quantity)>20.00
 ORDER BY AVG(od.Quantity) ASC, p.ProductName ASC;
+
+-- Source:
+-- https://www.quora.com/What-does-Error-Code-1111-Invalid-use-of-group-function-mean-in-MySQL-SQL-MySQL-Workbench-and-development

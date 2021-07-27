@@ -12,3 +12,6 @@ FROM hr.employees AS e
 INNER JOIN hr.job_history AS h
 ON h.EMPLOYEE_ID = e.EMPLOYEE_ID
 ORDER BY CONCAT(e.first_name, " ", e.last_name), ROUND(DATEDIFF(h.END_DATE, h.START_DATE)/365, 2) ASC;
+
+-- Source:
+-- https://www.w3schools.com/mysql/func_mysql_date_format.asp

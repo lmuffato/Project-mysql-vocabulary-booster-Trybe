@@ -1,6 +1,6 @@
 # 1 - Exiba os países e indicando se cada um deles se encontra ou não na região formada pela Europa
 
-SELECT 
+SELECT
   C.COUNTRY_NAME AS País,
   CASE
     WHEN R.REGION_NAME = 'Europe' THEN 'incluído'

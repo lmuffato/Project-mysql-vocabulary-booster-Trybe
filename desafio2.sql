@@ -8,4 +8,5 @@ SELECT
         WHEN MAX_SALARY > 30000 THEN 'Altissímo'
         ELSE 'Sem classificação'
     END AS `Nível`
-FROM hr.jobs;
+FROM hr.jobs
+ORDER BY Cargo;

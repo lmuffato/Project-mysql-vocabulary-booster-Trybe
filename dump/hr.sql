@@ -225,4 +225,3 @@ UNLOCK TABLES;
 
 SELECT COUNT(DISTINCT job_id)
 FROM employees;
-

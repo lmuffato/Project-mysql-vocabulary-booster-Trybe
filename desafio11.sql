@@ -1,5 +1,5 @@
-SELECT c1.contactName AS `Nome`, 
-c1.country AS`País`, 
+SELECT c1.contactName AS `Nome`,
+c1.country AS`País`,
 COUNT(c1.country) AS `Número de compatriotas`
 FROM w3schools.customers AS c1
 JOIN w3schools.customers AS c2

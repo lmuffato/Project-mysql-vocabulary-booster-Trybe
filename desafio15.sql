@@ -6,8 +6,8 @@ BEGIN
 SELECT ROUND(AVG(salary), 2) AS `Média salarial`
 FROM hr.employees
 WHERE job_id IN (
-  SELECT job_id 
-  FROM jobs 
+  SELECT job_id
+  FROM jobs
   WHERE job_title = job_name
 );
 END $$

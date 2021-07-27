@@ -1,6 +1,6 @@
 -- 7. Faça um relatório que mostra o histórico de cargos das pessoas empregadas que iniciaram seus cargos nos meses de janeiro, fevereiro ou março
 SELECT
-	UCASE(CONCAT(first_name," ",last_name))
+UCASE(CONCAT(first_name," ",last_name))
 AS 'Nome completo',
 jh.start_date
 AS 'Data de início',

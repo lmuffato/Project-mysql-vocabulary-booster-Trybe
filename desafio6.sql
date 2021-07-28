@@ -10,7 +10,7 @@
 -- Em caso de empate no nome completo, ordene os resultados pelo nome do cargo em ordem alfabética.
 
 SELECT CONCAT(employees.first_name, ' ', employees.last_name) AS `Nome completo`, jobs.job_title AS `Cargo`,
-jobH.start_date AS `Data de início`, department_name AS 'Departamento'
+jobH.start_date AS `Data de início do cargo`, department_name AS 'Departamento'
 FROM hr.employees AS employees
 INNER JOIN hr.job_history AS jobH
 ON jobH.employee_id = employees.employee_id

@@ -1,5 +1,5 @@
 SELECT
-concat(first_name,' ',last_name) AS 'Nome Completo',j.JOB_TITLE AS 'Cargo', jh.START_DATE AS 'Data de início do cargo', d.DEPARTMENT_NAME AS Departamento
+concat(first_name,' ',last_name) AS 'Nome completo',j.JOB_TITLE AS 'Cargo', jh.START_DATE AS 'Data de início do cargo', d.DEPARTMENT_NAME AS Departamento
 FROM hr.employees AS e
 INNER JOIN hr.job_history AS jh
 ON e.EMPLOYEE_ID = jh.EMPLOYEE_ID

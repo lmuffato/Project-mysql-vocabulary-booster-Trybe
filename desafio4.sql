@@ -9,5 +9,5 @@ SELECT j.JOB_TITLE AS `Cargo`, AVG(e.SALARY) AS `Média salarial`,
 FROM hr.employees AS e
 INNER JOIN hr.jobs AS j
 ON e.JOB_ID = j.JOB_ID
-GROUP BY Cargo
-ORDER BY `Média salarial`, Cargo;
+GROUP BY j.JOB_TITLE
+ORDER BY `Média salarial`, j.JOB_TITLE;

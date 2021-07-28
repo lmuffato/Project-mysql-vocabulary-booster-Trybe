@@ -8,5 +8,3 @@ ON j.JOB_ID = jh.JOB_ID
 INNER JOIN hr.departments AS d
 ON jh.DEPARTMENT_ID = d.DEPARTMENT_ID
 ORDER BY `Nome completo` DESC, `Cargo` ASC;
-
-SELECT * FROM hr.job_history;

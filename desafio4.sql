@@ -5,8 +5,6 @@ CASE
   WHEN AVG(employees.SALARY) BETWEEN 7501 AND 10500 THEN 'Sênior'
   ELSE 'CEO'
 END AS 'Senioridade'
-FROM hr.employees AS employees
-	INNER JOIN
-    hr.jobs AS jobs ON employees.JOB_ID = jobs.JOB_ID
+FROM hr.employees AS employees INNER JOIN hr.jobs AS jobs ON employees.JOB_ID = jobs.JOB_ID
 GROUP BY jobs.JOB_TITLE
 ORDER BY AVG(employees.SALARY), jobs.JOB_TITLE;

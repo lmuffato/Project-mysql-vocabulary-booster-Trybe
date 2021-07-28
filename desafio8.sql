@@ -11,6 +11,3 @@ FROM
 WHERE 
   S.ShipperName IN ('Speedy Express', 'United Package')
 ORDER BY `Nome de contato`, `Empresa que fez o envio`, `Data do pedido`;
-
-
-SELECT * FROM w3schools.customers;

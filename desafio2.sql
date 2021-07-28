@@ -7,4 +7,5 @@ SELECT
 		WHEN MAX_SALARY > 30000 THEN 'Altíssimo'
         ELSE 'erro de leitura'
     END AS 'Nível'
-FROM hr.jobs;
+FROM hr.jobs
+ORDER BY JOB_TITLE ASC;

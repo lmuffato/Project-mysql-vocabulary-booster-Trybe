@@ -1,5 +1,7 @@
 SELECT 
-    cst1.ContactName, COUNT(cst2.CustomerName)
+    cst1.ContactName AS 'Nome',
+    cst1.Country AS 'País',
+    COUNT(cst2.CustomerName) AS 'Número de compatriotas'
 FROM
     w3schools.customers AS cst1,
     w3schools.customers AS cst2

@@ -11,4 +11,3 @@ FROM
 WHERE
     s.ShipperName IN ('Speedy Express' , 'United Package')
 ORDER BY `Nome de contato` , `Empresa que fez o envio`;
- 

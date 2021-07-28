@@ -1,8 +1,8 @@
 -- 6 - Faça um relatório que mostra o histórico de cargos das pessoas empregadas
-SELECT CONCAT(e.FIRST_NAME, ' ', e.LAST_NAME) AS 'Nome Completo',
-j.JOB_TITLE AS 'Cargo',
-h.START_DATE AS 'Data de início do cargo',
-d.DEPARTMENT_NAME AS 'Departamento'
+SELECT CONCAT(e.FIRST_NAME, ' ', e.LAST_NAME) AS `Nome Completo`,
+j.JOB_TITLE AS `Cargo`,
+h.START_DATE AS `Data de início do cargo`,
+d.DEPARTMENT_NAME AS `Departamento`
 FROM hr.employees AS e
 INNER JOIN hr.job_history AS h
 ON h.EMPLOYEE_ID = e.EMPLOYEE_ID

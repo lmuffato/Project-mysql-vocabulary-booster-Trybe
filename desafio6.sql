@@ -8,4 +8,5 @@ SELECT
   (SELECT DEPARTMENT_NAME FROM hr.departments AS D
     WHERE D.DEPARTMENT_ID = H.DEPARTMENT_ID) AS Departamento
 FROM hr.job_history AS H
+WHERE EMPLOYEE_ID <> 0
 ORDER BY `Nome completo` DESC, Cargo ASC;

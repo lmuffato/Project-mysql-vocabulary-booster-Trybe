@@ -10,4 +10,5 @@ WHERE
   O.ShipperID IN (1, 2)
 ORDER BY
   `Nome de contato`,
-  `Empresa que fez o envio`;
+  `Empresa que fez o envio`,
+  `Data do pedido`;

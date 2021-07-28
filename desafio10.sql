@@ -1,7 +1,7 @@
 SELECT 
 products.ProductName AS 'Produto',
 MIN(order_details.Quantity) AS 'Mínima',
-MAX(order_details.Quantity) AS 'MáximA',
+MAX(order_details.Quantity) AS 'Máxima',
 ROUND(AVG(order_details.Quantity), 2) AS 'Média'
 FROM 
 w3schools.products AS products

@@ -8,6 +8,8 @@ INNER JOIN
 	hr.employees AS em
 ON
 	jh.EMPLOYEE_ID = em.EMPLOYEE_ID
+HAVING
+	MONTH(`Data de início`) IN (01, 02, 03)
 ORDER BY
 	`Nome completo` ASC,
     `Data de início` ASC;

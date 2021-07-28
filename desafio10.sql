@@ -1,5 +1,5 @@
 SELECT 
-	ods.OrderID,
+    ods.OrderID,
     prd.ProductName AS 'Produto',
     MIN(odt.Quantity) AS 'Mínima',
     MAX(odt.Quantity) AS 'Máxima',
@@ -12,4 +12,4 @@ FROM
     w3schools.products AS prd ON odt.ProductID = prd.ProductID
 GROUP BY odt.ProductID
 HAVING `Média` > 20.00
-ORDER BY `Média` ASC, `Produto` ASC;
+ORDER BY `Média` ASC , `Produto` ASC;

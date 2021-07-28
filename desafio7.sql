@@ -4,7 +4,7 @@ SELECT
   e.SALARY AS 'Salário'
 FROM
   hr.employees e
-  INNER JOIN hr.job_history jh ON e.JOB_ID = jh.JOB_ID
+  INNER JOIN hr.job_history jh ON e.employee_id = jh.employee_id
 WHERE
   MONTH(jh.START_DATE) IN (1, 2, 3)
 ORDER BY

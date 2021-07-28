@@ -7,5 +7,4 @@ WHEN COUNTRY_NAME = 'Germany' THEN 'incluído'
 WHEN COUNTRY_NAME = 'Netherlands' THEN 'incluído'
 WHEN COUNTRY_NAME = 'Switzerland' THEN 'incluído'
 WHEN COUNTRY_NAME = 'United Kingdom' THEN 'incluído'
-ELSE 'não incluído'
-END AS `Status Inclusão` FROM hr.countries;
+ELSE 'não incluído' END AS `Status Inclusão` FROM hr.countries;

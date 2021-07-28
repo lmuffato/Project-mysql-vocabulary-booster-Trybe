@@ -1,5 +1,3 @@
-select * from hr.jobs;
-
 SELECT JOB_TITLE AS 'Cargo',
 	MAX_SALARY AS 'Nível',
 	CASE

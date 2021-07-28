@@ -6,7 +6,7 @@
 -- A segunda deve possuir o alias "Status Inclusão" e deve exibir "incluído" se o país em questão está incluso em "Europe", ou "não incluído", caso contrário.
 -- Os resultados devem estar ordenados pelo nome do país em ordem alfabética.
 
-SELECT country_name AS 'País',
+SELECT country_name AS País,
 IF(region_id = 1, 'incluído', 'não incluído') AS 'Status Inclusão'
 FROM hr.countries
 ORDER BY País;

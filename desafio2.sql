@@ -10,7 +10,7 @@
 -- Salário máximo acima de 30000 arrow_right Altíssimo
 -- Os resultados devem estar ordenados pelo nome do cargo em ordem alfabética.
 
-SELECT job_title AS 'Cargo',
+SELECT job_title AS Cargo,
 CASE
   WHEN max_salary BETWEEN 5000 AND 10000 THEN 'Baixo'
   WHEN max_salary BETWEEN 10001 AND 20000 THEN 'Médio'

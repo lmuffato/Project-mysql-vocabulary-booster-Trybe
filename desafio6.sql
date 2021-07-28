@@ -9,10 +9,10 @@
 -- Os resultados devem estar ordenados pelo nome completo das pessoas empregadas em ordem decrescente.
 -- Em caso de empate no nome completo, ordene os resultados pelo nome do cargo em ordem alfabética.
 
-SELECT CONCAT(employees.first_name, ' ', employees.last_name) AS "Nome completo", jobs.JOB_TITLE AS 'Cargo', employees.hire_date AS 'Data de início do cargo', dep.department_name AS 'Departamento'
+SELECT CONCAT(employees.first_name, ' ', employees.last_name) AS `Nome completo`, jobs.JOB_TITLE AS `Cargo`, employees.hire_date AS 'Data de início do cargo', dep.department_name AS 'Departamento'
 FROM hr.employees AS employees
 INNER JOIN hr.jobs AS jobs
 ON employees.JOB_ID = jobs.JOB_ID
 INNER JOIN hr.departments AS dep
 ON employees.DEPARTMENT_ID = dep.DEPARTMENT_ID
-ORDER BY CONCAT(employees.first_name, ' ', employees.last_name) DESC, Cargo;
+ORDER BY `Nome completo` DESC, `Cargo`;

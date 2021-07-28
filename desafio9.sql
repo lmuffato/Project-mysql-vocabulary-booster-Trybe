@@ -5,9 +5,9 @@
 -- A segunda deve possuir o alias "Total de pedidos" e exibir a quantidade total de pedidos feitos pela pessoa.
 -- Ordene seus resultados pelo total de pedidos em ordem crescente.
 
-SELECT CONCAT(e.FirstName, ' ', e.LastName) AS 'Nome completo', COUNT(*) AS 'Total de pedidos'
+SELECT CONCAT(e.FirstName, ' ', e.LastName) AS `Nome completo`, COUNT(*) AS `Total de pedidos`
 FROM w3schools.employees AS e
 INNER JOIN w3schools.orders AS o
 ON e.EmployeeID = o.EmployeeID
-GROUP BY CONCAT(e.FirstName, ' ', e.LastName)
-ORDER BY COUNT(*);
+GROUP BY `Nome completo`
+ORDER BY `Total de pedidos`;

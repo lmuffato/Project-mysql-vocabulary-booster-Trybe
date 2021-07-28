@@ -13,8 +13,8 @@
 -- Os resultados devem estar ordenados pela média salarial em ordem crescente.
 -- Em caso de empate na média, os resultados devem ser ordenados pelo nome do cargo em ordem alfabética.
 
-SELECT jobs.job_title AS 'Cargo',
-ROUND(AVG(employees.salary), 2) AS 'Média salarial',
+SELECT jobs.job_title AS `Cargo`,
+ROUND(AVG(employees.salary), 2) AS `Média salarial`,
 CASE
   WHEN AVG(employees.salary) BETWEEN 2000 AND 5800 THEN 'Júnior'
   WHEN AVG(employees.salary) BETWEEN 5801 AND 7500 THEN 'Pleno'
@@ -24,5 +24,5 @@ END AS 'Senioridade'
 FROM hr.jobs AS jobs
 INNER JOIN hr.employees AS employees
 ON employees.JOB_ID = jobs.JOB_ID
-GROUP BY Cargo
-ORDER BY AVG(employees.salary), Cargo;
+GROUP BY `Cargo`
+ORDER BY `Média salarial`, `Cargo`;

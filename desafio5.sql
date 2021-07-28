@@ -9,5 +9,5 @@
 -- Os resultados devem estar ordenados pela variação salarial em ordem crescente.
 -- Em caso de empate na variação, os resultados devem ser ordenados pelo nome do cargo em ordem alfabética.
 
-SELECT job_title AS 'Cargo', max_salary - min_salary AS 'Variação Salarial', ROUND(min_salary / 12, 2) AS 'Média mínima mensal', ROUND(max_salary / 12, 2) AS 'Média máxima mensal'
-FROM hr.jobs ORDER BY max_salary - min_salary, Cargo;
+SELECT job_title AS Cargo, max_salary - min_salary AS `Variação Salarial`, ROUND(min_salary / 12, 2) AS 'Média mínima mensal', ROUND(max_salary / 12, 2) AS 'Média máxima mensal'
+FROM hr.jobs ORDER BY `Variação Salarial`, Cargo;

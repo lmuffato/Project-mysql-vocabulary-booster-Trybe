@@ -4,5 +4,5 @@ SELECT
 FROM
   hr.jobs
 ORDER BY
-  `Diferença entre salários máximo e mínimo` DESC,
+  `Diferença entre salários máximo e mínimo`,
   JOB_TITLE;

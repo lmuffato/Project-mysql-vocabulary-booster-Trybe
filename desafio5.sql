@@ -10,7 +10,7 @@ INNER JOIN
 ON
 	em.JOB_ID = jo.JOB_ID
 GROUP BY
-	em.JOB_ID
+	em.JOB_ID # Use JOB ID WORKED
 ORDER BY
 	`Variação Salarial` ASC,
     `Cargo` ASC;

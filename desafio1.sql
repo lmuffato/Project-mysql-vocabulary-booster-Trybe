@@ -9,4 +9,4 @@ SELECT
 FROM hr.countries AS c
 LEFT JOIN hr.regions AS r
 ON c.REGION_ID = r.REGION_ID
-ORDER BY c.COUNTRY_NAME;
+ORDER BY `País`;

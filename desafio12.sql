@@ -7,5 +7,5 @@ te2.salary AS `Salário funcionário 2`,
 te2.phone_number AS `Telefone funcionário 2`
 FROM hr.employees AS te,
 hr.employees AS te2
-WHERE te.job_id = te2.job_id 
+WHERE te.employee_id <> te2.employee_id AND te.job_id = te2.job_id 
 ORDER BY 1, 4;

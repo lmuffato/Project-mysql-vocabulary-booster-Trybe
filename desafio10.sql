@@ -1,15 +1,15 @@
 SELECT
-  P.ProductName AS 'Produto',
-  MIN(OD.Quantity) AS 'Mínima',
-  MAX(OD.Quantity) AS 'Máxima',
-  ROUND(AVG(OD.Quantity), 2) AS 'Média'
+  p.ProductName AS 'Produto',
+  MIN(d.Quantity) AS 'Mínima',
+  MAX(d.Quantity) AS 'Máxima',
+  ROUND(AVG(d.Quantity), 2) AS 'Média'
 FROM
-  w3schools.order_details AS OD
-  INNER JOIN w3schools.products AS P ON OD.ProductID = P.ProductID
+  w3schools.products p
+  INNER JOIN w3schools.order_details d ON p.ProductId = d.ProductId
 GROUP BY
   1
 HAVING
-  'Média' > 20
+  M é dia > 20
 ORDER BY
   4,
   1;

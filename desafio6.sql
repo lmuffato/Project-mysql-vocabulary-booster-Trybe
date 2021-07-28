@@ -5,17 +5,17 @@ SELECT
     DEPARTMENT_NAME AS 'Departamento'
 FROM
 	hr.job_history AS jh
-INNER JOIN
+LEFT JOIN
 	hr.employees AS em
 ON
 	jh.EMPLOYEE_ID = em.EMPLOYEE_ID
 INNER JOIN
 	hr.jobs AS jo
-ON em.JOB_ID = jo.JOB_ID
+ON jh.JOB_ID = jo.JOB_ID
 INNER JOIN
 	hr.departments AS de
 ON
 	em.DEPARTMENT_ID = de.DEPARTMENT_ID
 ORDER BY
-	`Nome completo` ASC,
+	`Nome completo` DESC,
     `Cargo` ASC;

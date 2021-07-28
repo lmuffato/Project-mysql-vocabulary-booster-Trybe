@@ -16,7 +16,7 @@ BEGIN
     INNER JOIN departments AS d
     INNER JOIN jobs AS j
     INNER JOIN employees AS e
-	ON (j.job_id = jh.job_id
+ON (j.job_id = jh.job_id
     AND d.department_ID = jh.department_ID
     AND e.employee_ID = jh.employee_ID
     AND e.email LIKE CONCAT('%', email, '%')

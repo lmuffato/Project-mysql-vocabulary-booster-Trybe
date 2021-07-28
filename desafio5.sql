@@ -1,7 +1,7 @@
 -- 5. Exiba os cargos com sua variação salarial e suas médias máxima e mínima mensal,
 -- considerando salários máximo e minímo como anuais
 SELECT
-	job_title
+job_title
 AS 'Cargo',
 (max_salary - min_salary)
 AS 'Variação Salarial',

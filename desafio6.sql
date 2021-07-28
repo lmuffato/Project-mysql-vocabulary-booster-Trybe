@@ -1,6 +1,6 @@
 -- 6. Faça um relatório que mostra o histórico de cargos das pessoas empregadas
 SELECT
-	CONCAT(e.first_name," ", e.last_name)
+CONCAT(e.first_name," ", e.last_name)
 AS 'Nome completo',
 j.job_title
 AS 'Cargo',

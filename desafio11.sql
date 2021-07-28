@@ -1,8 +1,8 @@
 -- 11. Exibe todas as pessoas clientes que possuem compatriotas, mostrando a quantidade de compatriotas para cada pessoa cliente
 SELECT
-	c.ContactName
+c.ContactName
 AS 'Nome',
-	c.Country
+c.Country
 AS 'País',
 COUNT(c.Country)
 AS 'Número de compatriotas'

@@ -14,5 +14,4 @@ INNER JOIN hr.employees AS e
 GROUP BY `Cargo`
 ORDER BY `Média salarial` ASC, `Cargo` ASC;
 
-
 /* Obrigada Lucas, Perycles, Luan  */

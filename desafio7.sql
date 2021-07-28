@@ -9,5 +9,3 @@ INNER JOIN hr.departments AS d
 ON jh.DEPARTMENT_ID = d.DEPARTMENT_ID
 WHERE MONTH(jh.START_DATE) IN (1 , 2, 3) 
 ORDER BY `Nome completo`, `Cargo`;
-
-SELECT * FROM hr.job_history;

@@ -1,5 +1,4 @@
-SELECT CONCAT(UPPER(e.FIRST_NAME), ' ', UPPER(e.LAST_NAME))  AS 'Nome completo', 
-  j.JOB_TITLE AS 'Cargo', 
+SELECT CONCAT(UPPER(e.FIRST_NAME), ' ', UPPER(e.LAST_NAME))  AS 'Nome completo',
   j_h.START_DATE AS 'Data de início',
   e.SALARY AS 'Salário'
 FROM employees as e

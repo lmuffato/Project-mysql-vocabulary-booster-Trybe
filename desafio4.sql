@@ -10,4 +10,4 @@ FROM employees AS e
 INNER JOIN jobs AS j
 ON j.JOB_ID = e.JOB_ID
 GROUP BY j.JOB_TITLE
-ORDER BY `Média salarial` ASC;
+ORDER BY `Média salarial` ASC, j.JOB_TITLE;

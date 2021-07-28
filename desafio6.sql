@@ -5,9 +5,9 @@ JOBHIST.start_date AS `Data de início do cargo`,
 DEP.department_name AS `Departamento`
 FROM hr.job_history AS JOBHIST
 INNER JOIN hr.employees AS EMP
-ON EMP.employee_ID = JOBHIST.employee_ID
+ON JOBHIST.employee_ID = EMP.employee_ID
 INNER JOIN hr.jobs AS JOB
-ON EMP.job_ID = JOB.job_ID
+ON JOB.job_ID = JOBHIST.job_ID
 INNER JOIN hr.departments AS DEP
-ON DEP.department_ID = EMP.department_ID
+ON JOBHIST.department_ID = DEP.department_ID
 ORDER BY `Nome Completo` DESC, `Cargo` ASC;

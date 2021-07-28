@@ -1,1 +1,11 @@
-call buscar_media_por_cargo('Programmer')
+USE hr;
+
+DELIMITER $$
+
+CREATE TRIGGER onUpdatePutDate
+BEFORE INSERT ON w3schools.orders
+FOR EACH ROW
+BEGIN 
+  SET NEW.OrderDate = NOW();
+END $$
+DELIMITER ;

@@ -1,12 +1,12 @@
 SELECT
-	DISTINCT Country AS `País`
+    DISTINCT Country AS `País`
 FROM
-	suppliers
+    suppliers
 UNION
-	SELECT
-		DISTINCT Country AS `País`
-	FROM
-		customers
+    SELECT
+        DISTINCT Country AS `País`
+    FROM
+        customers
 ORDER BY
-	`País`
+    `País`
 LIMIT 5;

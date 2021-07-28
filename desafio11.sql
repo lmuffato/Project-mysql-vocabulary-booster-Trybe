@@ -1,18 +1,18 @@
 SELECT
-	c.ContactName AS `Nome`,
+    c.ContactName AS `Nome`,
     c.Country AS `País`,
     COUNT(cc.CustomerID) AS `Número de compatriotas`
 FROM
-	customers AS c
+    customers AS c
 JOIN
-	customers AS cc
+    customers AS cc
 ON
-	c.Country = cc.Country
+    c.Country = cc.Country
 WHERE
-	c.CustomerID != cc.CustomerID
+    c.CustomerID != cc.CustomerID
 GROUP BY
-	c.CustomerID
+    c.CustomerID
 HAVING
-	`Número de compatriotas` > 0
+    `Número de compatriotas` > 0
 ORDER BY
-	c.ContactName;
+    c.ContactName;

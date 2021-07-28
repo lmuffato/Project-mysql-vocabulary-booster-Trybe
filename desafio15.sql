@@ -7,18 +7,18 @@ CREATE PROCEDURE buscar_media_por_cargo(
 )
 BEGIN
     SELECT
-		ROUND(AVG(e.SALARY), 2) AS `Média salarial`
-	FROM
-		employees AS e
-	JOIN
-		jobs as j
-	ON
-		e.JOB_ID = j.JOB_ID
-	WHERE
-		j.JOB_TITLE LIKE job_title;
+        ROUND(AVG(e.SALARY), 2) AS `Média salarial`
+    FROM
+        employees AS e
+    JOIN
+        jobs as j
+    ON
+        e.JOB_ID = j.JOB_ID
+    WHERE
+        j.JOB_TITLE LIKE job_title;
 END $$
 
 DELIMITER ;
 
 CALL
-	buscar_media_por_cargo('Programmer');
+    buscar_media_por_cargo('Programmer');

@@ -2,12 +2,12 @@ SELECT
   DISTINCT t.Country AS 'País'
 FROM
   (SELECT
-    Country
+    CustomerName, Country
   FROM
     w3schools.customers
   UNION ALL
   SELECT
-    Country
+    SupplierName, Country
   FROM
     w3schools.suppliers) AS t
 ORDER BY 1

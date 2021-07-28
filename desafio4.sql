@@ -18,4 +18,4 @@ GROUP BY
   `jobs`.JOB_ID
 ORDER BY
   `Média salarial` ASC,
-  `jobs`.JOB_TITLE ASC;
+  `Cargo` ASC;

@@ -1,8 +1,8 @@
 SELECT
-	JOB_TITLE AS 'Cargo',
-    MAX_SALARY - MIN_SALARY AS 'Variação Salarial',
-	MIN_SALARY / 12 AS 'Média mínima mensal',
-    MAX_SALARY / 12 AS 'Média máxima mensal'
+	jo.JOB_TITLE AS 'Cargo',
+    jo.MAX_SALARY - jo.MIN_SALARY AS 'Variação Salarial',
+	jo.MIN_SALARY / 12 AS 'Média mínima mensal',
+    jo.MAX_SALARY / 12 AS 'Média máxima mensal'
 FROM
 	hr.employees AS em
 INNER JOIN
@@ -10,7 +10,7 @@ INNER JOIN
 ON
 	em.JOB_ID = jo.JOB_ID
 GROUP BY
-	`Cargo`
+	em.JOB_ID
 ORDER BY
 	`Variação Salarial` ASC,
     `Cargo` ASC;

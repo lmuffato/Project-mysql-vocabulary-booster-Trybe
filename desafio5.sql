@@ -10,4 +10,3 @@ FROM hr.jobs AS j
 ON e.JOB_ID = j.JOB_ID
 GROUP BY `Cargo`, `Variação Salarial` 
 ORDER BY `Variação Salarial`, `Cargo`;
-

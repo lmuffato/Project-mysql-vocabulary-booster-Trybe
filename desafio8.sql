@@ -9,5 +9,3 @@ ON (COST.customerID = ORD.customerId)
 AND ((ORD.shipperId = 1 AND SHIP.shipperId = ORD.shipperId) 
 OR (ORD.shipperId = 2 AND SHIP.shipperId = ORD.shipperId))
 ORDER BY COST.contactName ASC, SHIP.shipperName ASC, ORD.orderDate ASC;
-
-SELECT * FROM w3schools.shippers;

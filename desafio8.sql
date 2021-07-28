@@ -4,7 +4,7 @@ shippers.ShipperName AS 'Empresa que fez o envio',
 orders.orderDate AS 'Data do pedido'
 FROM w3schools.customers AS customers
 INNER JOIN 
-w3schoolS.orders AS orders 
+w3schools.orders AS orders 
 ON orders.CustomerID = customers.CustomerID
 INNER JOIN 
 w3schools.shippers AS shippers

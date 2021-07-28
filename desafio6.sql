@@ -13,10 +13,10 @@ hr.employees
 AS e
 INNER JOIN hr.jobs
 AS j
-ON j.job_id = e.job_id
+ON j.job_id = jh.job_id
 INNER JOIN hr.departments
 AS d
-ON d.department_id = e.department_id
+ON d.department_id = jh.department_id
 INNER JOIN hr.job_history
 as jh
 ON jh.employee_id = e.employee_id

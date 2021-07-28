@@ -6,5 +6,5 @@ SELECT
 FROM
   hr.employees as e
 INNER JOIN
- hr.job_history as jh ON e.EMPLOYEE_ID = jh.EMPLOYEE_ID
+  hr.job_history as jh ON e.EMPLOYEE_ID = jh.EMPLOYEE_ID
 ORDER BY 1, 4;

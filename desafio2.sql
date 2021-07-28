@@ -1,4 +1,3 @@
-SELECT * FROM hr.jobs;
 SELECT job_title AS `Cargo`, 
 CASE
 WHEN max_salary BETWEEN 5000 AND 10000  THEN 'Baixo'

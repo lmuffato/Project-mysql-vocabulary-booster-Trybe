@@ -9,7 +9,7 @@ SELECT
         ELSE ''
     END AS 'Senioridade'
 FROM
-     hr.jobs AS job
+    hr.jobs AS job
         INNER JOIN
     hr.employees AS emp ON emp.JOB_ID = job.JOB_ID
 GROUP BY job.JOB_TITLE

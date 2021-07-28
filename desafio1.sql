@@ -5,7 +5,3 @@ CASE
 END AS 'Status Inclusão'
 FROM hr.countries
 ORDER BY País ASC;
-
-
-SELECT * FROM hr.countries;
-SELECT * FROM ;

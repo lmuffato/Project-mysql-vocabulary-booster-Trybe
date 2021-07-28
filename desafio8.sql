@@ -7,4 +7,4 @@ ON c.customerId = o.customerId
 JOIN w3schools.shippers AS s
 ON s.shipperId = o.shipperId 
 AND s.shipperName IN ('Speedy Express', 'United Package')
-ORDER BY `Nome de contato`, `Empresa que fez o envio`; 
+ORDER BY `Nome de contato`, `Data do pedido`;

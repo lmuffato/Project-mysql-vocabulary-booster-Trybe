@@ -5,4 +5,4 @@ FROM
   hr.jobs
 ORDER BY
   `Diferença entre salários máximo e mínimo` ASC,
-  `JOB_TITLE` ASC;
+  `Cargo` ASC;

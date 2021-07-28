@@ -1,6 +1,6 @@
 SELECT
   P.ProductName AS 'Produto',
-  MIN(O.Quantity) AS 'Minima',
+  MIN(O.Quantity) AS 'Mínima',
   MAX(O.Quantity) AS 'Máxima',
   ROUND(AVG(O.Quantity), 2) AS 'Média'
 FROM

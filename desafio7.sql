@@ -10,5 +10,5 @@ AS e
 INNER JOIN hr.job_history 
 AS h
 ON h.EMPLOYEE_ID = e.EMPLOYEE_ID
-WHERE MOUNTH(h.START_DATE) IN(1, 2, 3)
+WHERE MONTH(h.START_DATE) IN(1, 2, 3) -- posição de onde usar o where vista no PR da Ana Ventura
 ORDER BY `Nome Completo`, `Data de início`;

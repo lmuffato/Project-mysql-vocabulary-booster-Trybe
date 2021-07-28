@@ -13,7 +13,8 @@ INNER JOIN departments AS d
 ON d.DEPARTMENT_ID = jh.DEPARTMENT_ID
 INNER JOIN jobs AS j
 ON j.JOB_ID = jh.JOB_ID
-WHERE e.EMAIL LIKE email;
+WHERE e.EMAIL LIKE email
+ORDER BY Department, Cargo;
 END $$
 
 DELIMITER ;

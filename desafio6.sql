@@ -8,4 +8,4 @@ INNER JOIN hr.departments AS cd
 INNER JOIN hr.job_history AS cjh
 ON ((cjh.department_id = cd.department_id)
 AND (cj.job_id = cjh.job_id) AND (cjh.employee_id = ce.employee_id))
-ORDER BY CONCAT(ce.first_name, " ", ce.last_name) DESC, cj.job_title;
+ORDER BY 1 DESC, 2;

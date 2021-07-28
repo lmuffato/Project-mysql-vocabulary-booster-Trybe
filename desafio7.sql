@@ -6,4 +6,4 @@ ON jh.EMPLOYEE_ID = e.EMPLOYEE_ID
 INNER JOIN hr.jobs AS j
 ON jh.JOB_ID = j.JOB_ID
 WHERE MONTH(jh.START_DATE) IN (1 , 2, 3) 
-ORDER BY `Nome completo`;
+ORDER BY `Nome completo`, `Data de início`;

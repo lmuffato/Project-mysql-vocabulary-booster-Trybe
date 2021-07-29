@@ -4,4 +4,3 @@ FROM hr.employees AS employees, hr.employees AS employees2
 WHERE employees.JOB_ID = employees2.JOB_ID
 AND (employees.FIRST_NAME <> employees2.FIRST_NAME OR employees.LAST_NAME <> employees2.LAST_NAME)
 ORDER BY `Nome completo funcionário 1` ASC, `Nome completo funcionário 2` ASC;
- 

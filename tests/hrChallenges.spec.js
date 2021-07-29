@@ -47,7 +47,7 @@ describe('Desafios iniciais', () => {
     });
   });
 
-  describe.only('3 - Exiba os cargos com a diferença entre seus salários máximo e mínimo', () => {
+  describe('3 - Exiba os cargos com a diferença entre seus salários máximo e mínimo', () => {
     it('Verifica o desafio 3', async () => {
       const challengeQuery = readFileSync('desafio3.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult3');
@@ -56,7 +56,7 @@ describe('Desafios iniciais', () => {
     });
   });
 
-  describe('4 - Exiba a média salarial e o nível de senioridade de todas as pessoas empregadas, agrupadas pelo cargo', () => {
+  describe.only('4 - Exiba a média salarial e o nível de senioridade de todas as pessoas empregadas, agrupadas pelo cargo', () => {
     it('Verifica o desafio 4', async () => {
       const challengeQuery = readFileSync('desafio4.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult4');

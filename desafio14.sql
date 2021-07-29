@@ -1,4 +1,5 @@
-SELECT country FROM w3schools.customers
+(SELECT Country AS `País` FROM w3schools.customers)
 UNION
-SELECT country FROM w3schools.suppliers
-ORDER BY country LIMIT 5;
+(SELECT Country FROM w3schools.suppliers)
+ORDER BY País LIMIT 5;
+

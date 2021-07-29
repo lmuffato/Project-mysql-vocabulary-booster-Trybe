@@ -7,4 +7,3 @@ INNER JOIN w3schools.shippers AS ship
 ON orde.CustomerID = cust.CustomerID AND ship.ShipperID = orde.ShipperID
 WHERE ship.ShipperName = 'Speedy Express' OR ship.ShipperName = 'United Package'
 ORDER BY `Nome de contato`, `Empresa que fez o envio`, `Data do pedido`;
-

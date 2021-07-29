@@ -5,4 +5,3 @@ ROUND(AVG(MAX_SALARY DIV 12), 2) AS `Média Máxima Mensal`
 FROM hr.jobs
 GROUP BY Cargo, `Variação Salarial`
 ORDER BY `Variação Salarial` ASC, Cargo ASC;
-

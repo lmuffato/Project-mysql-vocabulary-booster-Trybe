@@ -1,5 +1,4 @@
-SELECT p.ProductName AS Produto,
-	p.price AS Preço
+SELECT p.ProductName AS Produto, p.price AS Preço
 FROM products AS p
 INNER JOIN order_details AS od
 ON od.ProductID = p.ProductID

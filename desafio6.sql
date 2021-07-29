@@ -1,4 +1,4 @@
- SELECT 
+SELECT 
     CONCAT(fun.FIRST_NAME, ' ', fun.LAST_NAME) AS 'Nome completo',
     jb.JOB_TITLE AS Cargo,
     jh.START_DATE AS 'Data de início do cargo',

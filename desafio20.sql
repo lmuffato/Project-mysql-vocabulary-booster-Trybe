@@ -12,7 +12,8 @@ LEFT JOIN hr.departments AS d
 ON d.DEPARTMENT_ID = jh.DEPARTMENT_ID
 LEFT JOIN hr.jobs AS j
 ON j.JOB_ID = jh.JOB_ID
-WHERE e.EMAIL = e_mail;
+WHERE e.EMAIL = e_mail
+ORDER BY Departamento, Cargo;
 END $$
 
 DELIMITER ;

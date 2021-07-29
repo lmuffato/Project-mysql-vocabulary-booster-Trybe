@@ -1,5 +1,3 @@
-USE w3schools;
-
 SELECT
   CONCAT(e.FirstName, ' ', e.LastName) AS 'Nome completo',
   COUNT(o.OrderID) AS 'Total de pedidos'

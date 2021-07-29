@@ -6,7 +6,7 @@ SELECT
     WHEN AVG(E.SALARY) <= 7500 THEN 'Pleno'
     WHEN AVG(E.SALARY) <= 10500 THEN 'Sênior'
     ELSE 'CEO'
-   END
+    END
   ) AS 'Senioridade'
 FROM hr.jobs AS J
 INNER JOIN hr.employees AS E

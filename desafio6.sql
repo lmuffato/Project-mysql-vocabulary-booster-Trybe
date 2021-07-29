@@ -5,4 +5,4 @@ SELECT
   (SELECT DEPARTMENT_NAME FROM hr.departments AS D WHERE D.DEPARTMENT_ID = H.DEPARTMENT_ID ) AS 'Departamento'
 FROM hr.job_history AS H
 WHERE EXISTS (SELECT EMPLOYEE_ID FROM hr.employees AS E WHERE E.EMPLOYEE_ID = H.EMPLOYEE_ID)
-ORDER BY `Nome completo` DESC;
+ORDER BY `Nome completo` DESC, `Cargo`;

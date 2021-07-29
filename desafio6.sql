@@ -11,7 +11,7 @@ FROM
   `hr`.employees AS `employees`
   INNER JOIN `hr`.job_history AS `job_history` ON `job_history`.EMPLOYEE_ID = `employees`.EMPLOYEE_ID
   INNER JOIN `hr`.jobs AS `jobs` ON `jobs`.JOB_ID = `job_history`.JOB_ID
-  INNER JOIN `hr`.departments AS `departments` ON `departments`.DEPARTMENT_ID = `employees`.DEPARTMENT_ID
+  INNER JOIN `hr`.departments AS `departments` ON `departments`.DEPARTMENT_ID = `job_history`.DEPARTMENT_ID
 ORDER BY
   `Nome completo` DESC,
   `Cargo` ASC;

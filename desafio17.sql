@@ -8,6 +8,8 @@
 
 USE w3schools;
 
+DROP TRIGGER IF EXISTS trigger_Auto_Date;
+
 DELIMITER $$
 
 CREATE TRIGGER trigger_Auto_Date

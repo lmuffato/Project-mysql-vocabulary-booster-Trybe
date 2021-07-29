@@ -13,3 +13,10 @@
 -- A segunda deve possuir o alias "País" e exibir o nome do país em que a pessoa reside.
 -- A terceira deve possuir o alias "Número de compatriotas" e exibir o número de pessoas que moram no mesmo país.
 -- Os resultados devem estar ordenados pelo nome de contato da pessoa cliente em ordem alfabética.
+
+SELECT
+  ContactName AS `Nome`,
+  Country AS `País`,
+  COUNT(*) AS `Número de compatriotas`
+FROM w3schools.customers
+GROUP BY `Nome`, `País`;

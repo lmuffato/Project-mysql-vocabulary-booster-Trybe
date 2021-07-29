@@ -38,7 +38,7 @@ describe('Desafios iniciais', () => {
     });
   });
 
-  describe.only('2 - Exiba os cargos com seu nível de renumeração associado, com base no salário máximo do cargo', () => {
+  describe('2 - Exiba os cargos com seu nível de renumeração associado, com base no salário máximo do cargo', () => {
     it('Verifica o desafio 2', async () => {
       const challengeQuery = readFileSync('desafio2.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult2');
@@ -47,7 +47,7 @@ describe('Desafios iniciais', () => {
     });
   });
 
-  describe('3 - Exiba os cargos com a diferença entre seus salários máximo e mínimo', () => {
+  describe.only('3 - Exiba os cargos com a diferença entre seus salários máximo e mínimo', () => {
     it('Verifica o desafio 3', async () => {
       const challengeQuery = readFileSync('desafio3.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult3');

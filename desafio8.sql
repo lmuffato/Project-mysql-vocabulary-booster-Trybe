@@ -1,14 +1,10 @@
--- Carlos Gabriel Campos auxilio no erro.
-SELECT
-  CONCAT(e.FIRST_NAME, ' ', e.LAST_NAME) AS 'Nome completo',
-  j.JOB_TITLE AS 'Cargo',
-  jh.START_DATE AS 'Data de início do cargo',
-  d.DEPARTMENT_NAME AS 'Departamento'
-FROM
-  hr.employees e
-  INNER JOIN hr.job_history jh ON e.EMPLOYEE_ID = jh.EMPLOYEE_ID
-  INNER JOIN hr.jobs j ON jh.JOB_ID = j.JOB_ID
-  INNER JOIN hr.departments d ON e.DEPARTMENT_ID = d.DEPARTMENT_ID
-ORDER BY
-  `Nome completo` DESC,
-  `Cargo`;
+SELECT 
+  c.CustomerContact AS 'Nome de contato',
+  s.ShipperName AS 'Empresa que fez o envio',
+  o.OrderDate AS 'Data do pedido'
+FROM 
+  w3schools.orders o
+  INNER JOIN w3schools.customers c ON c.CustomerID = o.CustomerID
+  INNER JOIN w3schools.shippers s ON s.ShipperID = o.ShipperID
+WHERE s.ShipperName IN ('Speedy Express', 'United Package')
+ORDER BY `Nome de contato`, `Empresa que fez o envio`, `Data do pedido`;

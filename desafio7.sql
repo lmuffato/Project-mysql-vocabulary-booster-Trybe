@@ -6,4 +6,3 @@ INNER JOIN hr.job_history AS s
 ON e.EMPLOYEE_ID = s.EMPLOYEE_ID
 WHERE MONTH(s.START_DATE) IN (1, 2, 3)
 ORDER BY `Nome completo`, `Data de início`;
-

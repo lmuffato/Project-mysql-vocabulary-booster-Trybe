@@ -29,7 +29,7 @@ describe('Desafios iniciais', () => {
     sequelize.close();
   });
 
-  describe.only('1 - Exiba os países e indicando se cada um deles se encontra ou não na região formada pela Europa', () => {
+  describe('1 - Exiba os países e indicando se cada um deles se encontra ou não na região formada pela Europa', () => {
     it('Verifica o desafio 1', async () => {
       const challengeQuery = readFileSync('desafio1.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult1');
@@ -38,7 +38,7 @@ describe('Desafios iniciais', () => {
     });
   });
 
-  describe('2 - Exiba os cargos com seu nível de renumeração associado, com base no salário máximo do cargo', () => {
+  describe.only('2 - Exiba os cargos com seu nível de renumeração associado, com base no salário máximo do cargo', () => {
     it('Verifica o desafio 2', async () => {
       const challengeQuery = readFileSync('desafio2.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult2');

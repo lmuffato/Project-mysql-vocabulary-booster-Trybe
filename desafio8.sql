@@ -1,3 +1,5 @@
+USE w3schools;
+
 SELECT
   c.ContactName AS 'Nome de contato',
   s.ShipperName AS 'Empresa que fez o envio',

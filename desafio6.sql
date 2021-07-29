@@ -14,4 +14,3 @@ WHERE MONTH(jh.START_DATE) BETWEEN 1 AND 3
 ORDER BY CONCAT(UCASE(e.FIRST_NAME),' ',UCASE(e.LAST_NAME)) ASC, jh.START_DATE ASC;
 
 -- faço inner join com três tabelas diferentes e faço o link entre elas cada uma de uma vez que
-

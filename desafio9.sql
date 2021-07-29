@@ -1,0 +1,1 @@
+SELECT CONCAT(empl.FirstName, ' ', empl.LastName) AS `Nome completo`, COUNT(orde.EmployeeID) AS `Total de pedidos` FROM w3schools.employees as empl INNER JOIN w3schools.orders AS orde ON empl.EmployeeID = orde.EmployeeID GROUP BY `Nome completo` ORDER BY `Total de pedidos`;

@@ -5,3 +5,17 @@
 -- Confirme a execução correta da procedure chamando-a e passando o nome de cargo igual a "Programmer":
 -- CALL buscar_media_por_cargo('Programmer');
 -- Chamando-a dessa forma, sua procedure deve retornar 5760.00 como média salarial para pessoas que ocupam o cargo "Programmer".
+
+USE hr;
+DELIMITER $$
+
+CREATE PROCEDURE buscar_media_por_cargo (IN CARGO varchar(100))
+BEGIN
+  SELECT ROUND(AVG(E.SALARY), 2) AS `Média salarial`
+  FROM hr.employees E
+  INNER JOIN hr.jobs J
+  ON E.JOB_ID = J.JOB_ID
+  WHERE J.JOB_TITLE = CARGO;
+END $$
+
+DELIMITER ;

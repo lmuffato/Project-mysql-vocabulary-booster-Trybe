@@ -13,4 +13,4 @@ CASE
 END AS `Senioridade`
 FROM hr.employees
 GROUP BY JOB_ID
-ORDER BY ROUND(AVG(SALARY),2);
+ORDER BY `Média salarial`, `Cargo`;

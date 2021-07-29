@@ -8,10 +8,10 @@
 
 DELIMITER $$
 CREATE TRIGGER insert_date
-  AFTER INSERT ON w3schools.orders
+  BEFORE INSERT ON w3schools.orders
   FOR EACH ROW
 BEGIN
-  INSERT INTO w3schools.orders (OrderDate) VALUES (DATE(NOW()));
+  SET NEW.OrderDate = CURRENT_DATE();
 END $$
 
 DELIMITER ;

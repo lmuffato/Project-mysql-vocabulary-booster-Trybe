@@ -9,4 +9,5 @@ SELECT
     WHERE c.Country = Country
   ) AS `Número de compatriotas`
 FROM w3schools.customers AS c
-ORDER BY ContactName ASC;
+HAVING `Número de compatriotas` >= 1
+ORDER BY `Nome` ASC;

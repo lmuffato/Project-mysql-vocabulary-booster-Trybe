@@ -1,5 +1,4 @@
-SELECT 
-    ods.OrderID,
+SELECT
     prd.ProductName AS 'Produto',
     MIN(odt.Quantity) AS 'Mínima',
     MAX(odt.Quantity) AS 'Máxima',

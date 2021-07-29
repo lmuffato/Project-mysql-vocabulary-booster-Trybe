@@ -12,5 +12,3 @@ WHERE em.EMAIL = emEmail
 GROUP BY jh.EMPLOYEE_ID;
 END $$
 DELIMITER ;
-
-buscar_quantidade_de_empregos_por_funcionario()

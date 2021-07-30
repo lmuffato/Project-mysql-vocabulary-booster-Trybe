@@ -10,6 +10,6 @@ INNER JOIN hr.job_history AS jh
 ON jh.EMPLOYEE_ID = e.EMPLOYEE_ID
 INNER JOIN hr.departments AS d
 ON d.DEPARTMENT_ID = jh.DEPARTMENT_ID
-ORDER BY CONCAT(e.FIRST_NAME,' ',e.LAST_NAME) DESC, jh.START_DATE ASC;
+ORDER BY CONCAT(e.FIRST_NAME,' ',e.LAST_NAME) DESC, j.JOB_TITLE ASC;
 
 -- faço inner join com três tabelas diferentes e faço o link entre elas cada uma de uma vez que

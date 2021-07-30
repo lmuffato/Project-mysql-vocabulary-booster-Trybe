@@ -2,12 +2,13 @@ SELECT
     CONCAT(e.FIRST_NAME, ' ', e.LAST_NAME) AS 'Nome completo',
     CASE
         WHEN
-             LENGTH(DAY(h.START_DATE)) = 1 AND 
-             LENGTH(MONTH(h.START_DATE)) = 1
+            LENGTH(DAY(h.START_DATE)) = 1
+                AND LENGTH(MONTH(h.START_DATE)) = 1
         THEN
             CONCAT(0,
                     DAY(h.START_DATE),
-                    '/', 0, 
+                    '/',
+                    0,
                     MONTH(h.START_DATE),
                     '/',
                     YEAR(h.START_DATE))
@@ -19,8 +20,7 @@ SELECT
                     MONTH(h.START_DATE),
                     '/',
                     YEAR(h.START_DATE))
-        ELSE CONCAT(
-                DAY(h.START_DATE),
+        ELSE CONCAT(DAY(h.START_DATE),
                 '/',
                 0,
                 MONTH(h.START_DATE),
@@ -46,8 +46,7 @@ SELECT
                     MONTH(h.END_DATE),
                     '/',
                     YEAR(h.END_DATE))
-        ELSE CONCAT(
-                DAY(h.END_DATE),
+        ELSE CONCAT(DAY(h.END_DATE),
                 '/',
                 0,
                 MONTH(h.END_DATE),

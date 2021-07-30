@@ -8,4 +8,3 @@ FROM w3schools.employees e
   ON e.EmployeeID = o.EmployeeID
 GROUP BY e.EmployeeID
 ORDER BY COUNT(o.OrderID) ASC;
-  

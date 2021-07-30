@@ -1,7 +1,7 @@
 DELIMITER $$
 
 CREATE TRIGGER insertOrderDate
-BEFORE INSERT ON orders.w3schools
+BEFORE INSERT ON w3schools.orders
 FOR EACH ROW
 BEGIN
     SET NEW.OrderDate = DATE(now());

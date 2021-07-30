@@ -3,5 +3,5 @@ FROM hr.employees AS e
 INNER JOIN hr.job_history AS jh
 INNER JOIN hr.jobs AS j 
 INNER JOIN hr.departments AS d 
-ON jh.EMPLOYEE_ID = e.EMPLOYEE_ID AND j.JOB_ID = jh.JOB_ID AND d.DEPARTMENT_ID = e.DEPARTMENT_ID 
+ON jh.EMPLOYEE_ID = e.EMPLOYEE_ID AND j.JOB_ID = jh.JOB_ID AND d.DEPARTMENT_ID = jh.DEPARTMENT_ID 
 ORDER BY `Nome completo` DESC, `Cargo` ASC;

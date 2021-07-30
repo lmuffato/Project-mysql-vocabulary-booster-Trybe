@@ -1,1 +1,1 @@
-SELECT * FROM w3schools.shippers;
+SELECT CONTACTNAME AS 'Nome de contato' FROM w3schools.customers

@@ -14,3 +14,15 @@
 -- A sexta deve possuir o alias "Telefone funcionário 2" e exibir o número da pessoa funcionária associada que possui o mesmo cargo.
 -- Os resultados devem estar ordenados pela coluna "Nome completo funcionário 1" em ordem alfabética.
 -- Em caso de empate, os resultados devem ser ordenados pela coluna Nome completo funcionário 2" em ordem alfabética.
+
+SELECT
+  CONCAT(E1.First_Name, ' ', E1.Last_Name) AS `Nome completo funcionário 1`,
+  E1.SALARY AS `Salário funcionário 1`,
+  E1.PHONE_NUMBER AS `Telefone funcionário 1`,
+  CONCAT(E2.First_Name, ' ', E2.Last_Name) AS `Nome completo funcionário 2`,
+  E2.SALARY AS `Salário funcionário 2`,
+  E2.PHONE_NUMBER AS `Telefone funcionário 2`
+FROM hr.employees E1, hr.employees E2
+WHERE E1.JOB_ID = E2.JOB_ID
+AND E1.EMPLOYEE_ID != E2.EMPLOYEE_ID
+ORDER BY `Nome completo funcionário 1`, `Nome completo funcionário 2`;

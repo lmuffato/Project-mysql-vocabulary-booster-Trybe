@@ -5,9 +5,7 @@ SELECT
     count(jh.JOB_ID) AS 'total_empregos'
 FROM
     hr.employees AS em
-INNER JOIN
-	hr.job_history AS jh
-ON em.EMPLOYEE_ID = jh.EMPLOYEE_ID
+INNER JOIN hr.job_history AS jh ON em.EMPLOYEE_ID = jh.EMPLOYEE_ID
 WHERE em.EMAIL = emEmail
 GROUP BY jh.EMPLOYEE_ID;
 END $$

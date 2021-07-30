@@ -4,4 +4,4 @@ ON sh.ShipperID = o.ShipperID
 INNER JOIN customers co
 ON co.CustomerID = o.CustomerID
 HAVING sh.ShipperName in("Speedy Express", "United Package")
-ORDER BY 1 ASC, 2 ASC;
+ORDER BY 1 ASC, 2 ASC, 3 ASC;

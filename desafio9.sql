@@ -4,4 +4,4 @@ FROM w3schools.employees e
 INNER JOIN orders o
 ON o.EmployeeID = e.EmployeeID
 GROUP BY `Nome completo`
-ORDER BY `Quantidade`
+ORDER BY `Total de pedidos`

@@ -8,4 +8,3 @@ FROM
   WHERE
   MONTH(START_DATE) IN (1 , 2, 3)
   ORDER BY `Nome completo`, `Data de início`;
-  

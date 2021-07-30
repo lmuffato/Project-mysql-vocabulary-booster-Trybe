@@ -9,4 +9,4 @@ SELECT
 FROM
   jobs as j
 ORDER BY 
-  j.JOB_TITLE;
+  Cargo;

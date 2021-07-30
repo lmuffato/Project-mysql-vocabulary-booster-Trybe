@@ -11,4 +11,4 @@ INNER JOIN
 WHERE 
   o.ShipperID = 1 OR o.ShipperID = 2
 ORDER BY
-  `Nome de contato`, `Empresa que fez o envio`;
+  `Nome de contato`, `Empresa que fez o envio`, `Data do pedido`;

@@ -2,7 +2,7 @@ DELIMITER $$
 CREATE FUNCTION exibir_quantidade_pessoas_contratadas_por_mes_e_ano (mnth INT, yr INT)
 RETURNS INT READS SQL DATA
 BEGIN
-	DECLARE retornado INT;
+DECLARE retornado INT;
 SELECT 
     COUNT(EMPLOYEE_ID)
 FROM

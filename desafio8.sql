@@ -1,4 +1,4 @@
-SELECT 
+/*SELECT 
   (SELECT ContactName 
     FROM w3schools.customers AS C
     WHERE C.CustomerID = O.CustomerID) AS `Nome de Contato`,
@@ -7,15 +7,15 @@ SELECT
     WHERE S.ShipperID = O.ShipperID) AS `Empresa que fez o envio`,
   OrderDate AS `Data do pedido`    
 FROM w3schools.orders AS O
-WHERE ShipperID IN (1, 3)
-ORDER BY `Nome de Contato` ASC, `Empresa que fez o envio` ASC, `Data do pedido` ASC;
+WHERE ShipperID IN (1, 2)
+ORDER BY `Nome de Contato` ASC, `Empresa que fez o envio` ASC, `Data do pedido` ASC;*/
 
-/*SELECT 
-  C.CustomerName AS `Nome de Contato`,
+SELECT 
+  C.ContactName AS `Nome de Contato`,
   S.ShipperName AS `Empresa que fez o envio`,
   OrderDate AS `Data do pedido`    
 FROM w3schools.orders AS O
 INNER JOIN w3schools.customers AS C
 INNER JOIN w3schools.shippers AS S
-ON S.ShipperName IN ('Speedy Express', 'United Package') AND C.CustomerID = O.CustomerID AND S.ShipperID = O.ShipperID
-ORDER BY `Nome de Contato` ASC, `Empresa que fez o envio` ASC, `Data do pedido` ASC;*/
+ON C.CustomerID = O.CustomerID AND S.ShipperID = O.ShipperID and S.ShipperName IN ('Speedy Express', 'United Package')
+ORDER BY `Nome de Contato` ASC, `Empresa que fez o envio` ASC, `Data do pedido` ASC;

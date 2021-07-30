@@ -1,5 +1,5 @@
 SELECT
-CONCAT(UCASE(e.FIRST_NAME),' ',UCASE(e.LAST_NAME)) AS 'Nome completo',
+CONCAT(e.FIRST_NAME,' ',e.LAST_NAME) AS 'Nome completo',
 j.JOB_TITLE AS 'Cargo',
 jh.START_DATE AS 'Data de início',
 d.DEPARTMENT_NAME AS 'Departamento'

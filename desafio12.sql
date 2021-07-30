@@ -5,5 +5,5 @@ CONCAT(b.FIRST_NAME, ' ', b.LAST_NAME) AS `Nome completo funcionário 2`,
 b.SALARY AS `Salário funcionário 2`,
 b.PHONE_NUMBER AS `Telefone funcionário 2`
 FROM hr.employees AS a, hr.employees AS b 
-WHERE a.FIRST_NAME != b.FIRST_NAME AND a.JOB_ID = b.JOB_ID
-ORDER BY `Nome completo funcionário 1`, `Nome completo funcionário 2`;
+WHERE a.JOB_ID = b.JOB_ID AND (a.FIRST_NAME <> b.FIRST_NAME OR a.LAST_NAME <> b.LAST_NAME)
+ORDER BY `Nome completo funcionário 1` ASC, `Nome completo funcionário 2` ASC;

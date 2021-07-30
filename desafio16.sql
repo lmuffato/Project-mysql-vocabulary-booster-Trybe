@@ -2,7 +2,7 @@ DELIMITER $$
 CREATE PROCEDURE buscar_quantidade_de_empregos_por_funcionario(IN emEmail VARCHAR(50))
 BEGIN
 SELECT
-    count(jh.JOB_ID)
+    count(jh.JOB_ID) AS 'total_empregos'
 FROM
     hr.employees AS em
 INNER JOIN

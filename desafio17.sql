@@ -1,11 +1,10 @@
 DELIMITER $$
 
 CREATE TRIGGER triggerOrderDate
-BEFORE INSERT ON w3schools.orders
-FOR EACH ROW
+	BEFORE INSERT ON orders
+	FOR EACH ROW
 BEGIN
-    SET NEW.OrderDate = CURRENT_DATE()
-    NEW.acao = 'INSERT';
+    SET NEW.OrderDate = CURRENT_DATE();
 END $$
 
 DELIMITER $$ ;

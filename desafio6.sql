@@ -16,4 +16,3 @@ history.DEPARTMENT_ID = department.DEPARTMENT_ID
 AND
 employees.EMPLOYEE_ID = history.EMPLOYEE_ID
 ORDER BY `Nome Completo` DESC, Cargo;
-

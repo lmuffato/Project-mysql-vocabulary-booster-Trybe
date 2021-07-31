@@ -10,5 +10,3 @@ INNER JOIN hr.employees AS e
 ON j.JOB_ID = e.JOB_ID
 GROUP BY Cargo
 ORDER BY ROUND(AVG(e.SALARY), 2) ASC, Cargo ASC;
-
-SELECT * FROM hr.employees;

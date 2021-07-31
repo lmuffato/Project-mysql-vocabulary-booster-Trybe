@@ -8,5 +8,4 @@ INNER JOIN jobs AS jo
 ON empl.JOB_ID = jo.JOB_ID
 WHERE jo.JOB_TITLE = job;
 END $$
-
 DELIMITER ;

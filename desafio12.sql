@@ -9,7 +9,7 @@ FROM
   hr.employees AS e,
   hr.employees AS e2
 WHERE
-  e.JOB_ID = e2.JOB_ID
+  e.employee_id <> e2.employee_id
 AND
-  e.FIRST_NAME <> e2.FIRST_NAME
-  ORDER BY 1, 4;
+  e.JOB_ID = e2.JOB_ID
+ORDER BY 1, 4;

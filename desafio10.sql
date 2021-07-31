@@ -4,13 +4,13 @@ SELECT
   MAX(o.Quantity) AS 'Máxima',
   ROUND(AVG(o.Quantity), 2) AS `Média`
 FROM
-  w3schools.order_details AS o
-INNER JOIN
   w3schools.products AS p
+INNER JOIN
+  w3schools.order_details AS o
 ON
   o.ProductID = p.ProductID
 GROUP BY
-  p.ProductID
+  o.ProductID
 HAVING
   `Média` > 20
 ORDER BY 4, 1;

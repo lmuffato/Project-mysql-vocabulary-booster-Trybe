@@ -4,8 +4,7 @@ CREATE TRIGGER insertDate
 AFTER INSERT ON orders 
 FOR EACH ROW 
 BEGIN 
-INSERT INTO orders(OrderDate)
-VALUES (NOW());
+SET NEW.OrderDate = NOW();
 END $$
 
 DELIMITER :

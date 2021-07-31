@@ -7,8 +7,8 @@ BEGIN
     DECLARE quant_pessoas INT;
     SELECT COUNT(*)
     FROM hr.employees AS E
-    WHERE MONTH(E.HIRE_DATE) = mes AND YEAR(E.HIRE_DATE) = ano  INTO movie_total;
-    RETURN movie_total;
+    WHERE MONTH(E.HIRE_DATE) = mes AND YEAR(E.HIRE_DATE) = ano  INTO quant_pessoas;
+    RETURN quant_pessoas;
 END $$
 
 DELIMITER ;

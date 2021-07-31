@@ -12,4 +12,3 @@ WHERE j.JOB_TITLE = cargo;
 END $$
 
 DELIMITER ;
-

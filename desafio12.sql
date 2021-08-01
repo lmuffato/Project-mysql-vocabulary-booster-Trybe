@@ -1,9 +1,9 @@
 SELECT 
     CONCAT(func1.FIRST_NAME, ' ', func1.LAST_NAME) AS 'Nome completo funcinário 1',
-    func1.SALARY AS 'Salário Funcionário 1',
+    func1.SALARY AS 'Salário funcionário 1',
     func1.PHONE_NUMBER AS 'Telefone funcionario 1',
     CONCAT(func2.FIRST_NAME, ' ', func2.LAST_NAME) AS 'Nome completo funcinário 2',
-    func2.SALARY AS 'Salário Funcionário 2',
+    func2.SALARY AS 'Salário funcionário 2',
     func2.PHONE_NUMBER AS 'Telefone funcionario 2'
 FROM
     hr.employees AS func1,

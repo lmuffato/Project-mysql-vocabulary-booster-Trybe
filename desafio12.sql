@@ -1,3 +1,5 @@
+-- Aprendi a usar a idetanção automática do Mysql workbench com a amiga, senhorita Nathália Pinheiro zebral
+
 SELECT 
     CONCAT(emp1.FIRST_NAME, ' ', emp1.LAST_NAME) AS 'Nome completo funcionário 1',
     emp1.SALARY AS 'Salário funcionário 1',
@@ -12,5 +14,3 @@ WHERE
     emp1.EMPLOYEE_ID <> emp2.EMPLOYEE_ID
         AND emp1.JOB_ID = emp2.JOB_ID
 ORDER BY `Nome completo funcionário 1` , `Nome completo funcionário 2`;
-
--- Aprendi a usar a idetanção automatica do Mysql workbench com a amiga senhorita Nathália Pinheiro zebral

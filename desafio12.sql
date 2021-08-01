@@ -12,3 +12,5 @@ WHERE
     emp1.EMPLOYEE_ID <> emp2.EMPLOYEE_ID
         AND emp1.JOB_ID = emp2.JOB_ID
 ORDER BY `Nome completo funcionário 1` , `Nome completo funcionário 2`;
+
+-- Aprendi a usar a idetanção automatica do Mysql workbench com a amiga senhorita Nathália Pinheiro zebral

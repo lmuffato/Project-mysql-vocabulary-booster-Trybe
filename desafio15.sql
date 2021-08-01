@@ -12,7 +12,7 @@ USE hr;
 DELIMITER $$
 CREATE PROCEDURE buscar_media_por_cargo(IN NOME_DO_CARGO VARCHAR(20))
 BEGIN
-	SELECT ROUND(AVG(T1.SALARY),2) AS `Média salarial` FROM hr.employees AS T1
+    SELECT ROUND(AVG(T1.SALARY),2) AS `Média salarial` FROM hr.employees AS T1
     INNER JOIN hr.jobs AS T2 ON T1.JOB_ID = T2.JOB_ID
     WHERE T2.JOB_TITLE = NOME_DO_CARGO;
 END $$

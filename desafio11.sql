@@ -1,7 +1,4 @@
-SELECT 
-	t1.ContactName AS `Nome`,
-    t1.Country AS `País`, 
-    COUNT(t1.Country) AS `Número de compatriotas`
+SELECT t1.ContactName AS `Nome`, t1.Country AS `País`, COUNT(t1.Country) AS `Número de compatriotas`
 FROM w3schools.customers AS t1
 JOIN w3schools.customers AS t2
 ON t1.Country = t2.Country 

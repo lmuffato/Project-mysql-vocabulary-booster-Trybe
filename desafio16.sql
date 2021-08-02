@@ -12,7 +12,7 @@ FROM
         INNER JOIN
     hr.employees e ON j.EMPLOYEE_ID = e.EMPLOYEE_ID
 WHERE
-    e.EMAIL = email INTO total_empregos;
+    e.EMAIL = email INTO result;
 RETURN result;
 END $$
 DELIMITER ;

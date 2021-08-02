@@ -1,10 +1,9 @@
 SELECT
     c.country_name País,
-CASE
-    WHEN r.region_name = 'Europe' THEN 'incluído'
-    ELSE 'não incluído'
-END 
-    'Status Inclusão'
+IF
+    (
+      r.region_name = 'Europe', 'incluído', 'não incluído'
+    ) 'Status Inclusão'
 FROM
     hr.countries c
 INNER JOIN

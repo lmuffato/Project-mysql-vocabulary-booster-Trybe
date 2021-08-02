@@ -7,4 +7,4 @@ BEGIN
     WHERE job = j.job_title;
 END $$
 
-DELIMITER ;
+DELIMITER;

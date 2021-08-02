@@ -13,7 +13,7 @@ BEGIN
   FROM hr.employees AS e
   INNER JOIN hr.job_history AS jh ON e.EMPLOYEE_ID=jh.EMPLOYEE_ID
   WHERE
-	e.EMAIL=emailValue
+    e.EMAIL=emailValue
   INTO qtd;
   RETURN qtd;
 END $$

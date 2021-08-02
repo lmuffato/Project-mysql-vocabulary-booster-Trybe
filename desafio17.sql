@@ -15,4 +15,3 @@ BEGIN
 END $$
 
 DELIMITER ;
-

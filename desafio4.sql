@@ -7,4 +7,3 @@ SELECT j.job_title AS Cargo, ROUND(AVG(j.max_salary + j.min_salary), 2) AS 'Méd
 FROM hr.jobs j
 GROUP BY Cargo
 ORDER BY `Média salarial`, Cargo;
-SELECT * FROM hr.jobs;

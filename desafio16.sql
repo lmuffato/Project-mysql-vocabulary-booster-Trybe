@@ -1,5 +1,3 @@
-USE hr;
-
 DELIMITER $$
 
 CREATE FUNCTION buscar_quantidade_de_empregos_por_funcionario(email VARCHAR(100))
@@ -19,7 +17,6 @@ BEGIN
 END $$
 
 DELIMITER ;
-
 
 -- uso INT pq retorno um numero inteiro e READS SQL DATA pq estou lendo dados do mysql
 -- uso o inner join para comparar as tabelas e contar quantas vezes o jh.EMPLOYEE_ID se repete

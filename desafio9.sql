@@ -1,4 +1,4 @@
-SELECT CONCAT(FirstName, ' ', LastName) AS 'Nome Completo',
+SELECT CONCAT(FirstName, ' ', LastName) AS 'Nome completo',
 -- https://www.alura.com.br/artigos/select-count-count1-e-countnome-a-batalha-dos-counts-de-sql
 COUNT(1) AS 'Total de pedidos'
 FROM w3schools.employees AS t1

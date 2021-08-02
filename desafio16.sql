@@ -2,7 +2,7 @@ DELIMITER $$
 CREATE FUNCTION buscar_quantidade_de_empregos_por_funcionario(email VARCHAR(100))
 RETURNS NUMERIC READS SQL DATA 
 BEGIN
-DECLARE total_empregos NUMERIC;
+DECLARE total_empregos INT;
 SELECT
 COUNT(J.EMPLOYEE_ID) INTO total_empregos
 FROM hr.job_history AS J

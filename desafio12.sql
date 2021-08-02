@@ -10,6 +10,6 @@ FROM
     hr.employees AS t2
 WHERE
     t1.job_id = t2.job_id
-        AND CONCAT(t1.first_name, ' ', t1.last_name) != CONCAT(t2.first_name, ' ', t2.last_name) 
+        AND t1.employee_id <> t2.employee_id
         AND t1.salary != t2.salary
         AND t1.phone_number != t2.phone_number ORDER BY `Nome completo funcionário 1`, `Nome completo funcionário 2`;

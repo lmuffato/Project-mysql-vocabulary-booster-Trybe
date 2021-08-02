@@ -11,5 +11,4 @@ FROM
 WHERE
     t1.job_id = t2.job_id
         AND t1.employee_id <> t2.employee_id
-        AND t1.salary != t2.salary
-        AND t1.phone_number != t2.phone_number ORDER BY `Nome completo funcionário 1`, `Nome completo funcionário 2`;
+      ORDER BY `Nome completo funcionário 1`, `Nome completo funcionário 2`;

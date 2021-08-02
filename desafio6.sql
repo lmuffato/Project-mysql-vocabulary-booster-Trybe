@@ -5,7 +5,7 @@ SELECT
           ' ',
           last_name
         )
-    'Nome Completo',
+    'Nome completo',
     j.job_title Cargo,
     jh.start_date 'Data de início do cargo',
     d.department_name Departamento

@@ -9,10 +9,6 @@
 --      Em caso de empate no nome de contato, ordene os resultados pelo nome da empresa que fez o envio do produto em ordem alfabética.
 --      Se houver empresas com o mesmo nome, ordene os resultados pela data do pedido em ordem crescente
 SELECT
-  *
-FROM
-  w3schools.orders;
-SELECT
   c.ContactName AS 'Nome de contato',
   s.ShipperName AS 'Empresa que fez o envio',
   o.OrderDate AS 'Data do pedido'
@@ -22,6 +18,6 @@ FROM
   INNER JOIN w3schools.shippers AS s ON o.ShipperID = s.ShipperID
   AND s.ShipperName IN ('Speedy Express', 'United Package')
 ORDER BY
-  1,
-  2,
-  3;
+  `Nome de contato`,
+  `Empresa que fez o envio`,
+  `Data do pedido`;

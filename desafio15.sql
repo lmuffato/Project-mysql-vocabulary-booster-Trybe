@@ -1,5 +1,5 @@
-USE hr;
- 
+  USE hr;
+
 DROP PROCEDURE IF EXISTS buscar_media_por_cargo;
 
 DELIMITER $$

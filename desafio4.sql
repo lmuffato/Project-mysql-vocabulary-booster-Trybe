@@ -6,7 +6,7 @@ CASE
   WHEN AVG(s.salary) BETWEEN 5801 AND 7500
   THEN 'Pleno'
   WHEN AVG(s.salary) BETWEEN 7501 AND 10500
-  THEN 'Senior'
+  THEN 'Sênior'
   ELSE 'CEO'
   END AS `Senioridade`
 FROM jobs as j

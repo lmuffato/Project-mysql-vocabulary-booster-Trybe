@@ -8,3 +8,6 @@ WHERE C1.Country = C2.Country AND C1.ContactName <> C2.ContactName
 ) AS `A`
 GROUP BY `Nome`, `País`
 ORDER BY `Nome`;
+
+--Referência:
+-- Correção erro GROUP BY teste encontrado na tread do slack: https://trybecourse.slack.com/archives/C01DJFH0DNW/p1621985643441600

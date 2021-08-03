@@ -5,6 +5,6 @@ SELECT
 FROM w3schools.customers AS t1
 JOIN w3schools.customers AS t2
 ON t1.country = t2.country
-AND t1.country <> t2.CustomerId
+AND t1.customerID <> t2.customerID
 GROUP BY 1, t2.country
 ORDER BY 1;

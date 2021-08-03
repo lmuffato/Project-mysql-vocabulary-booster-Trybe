@@ -9,6 +9,11 @@ FROM (
   FROM hr.employees AS E1, hr.employees AS E2
   WHERE E1.JOB_ID = E2.JOB_ID
 ) AS `A`
-GROUP BY `Nome completo funcionário 1`, `Salário funcionário 1`, `Nome completo funcionário 2`
+GROUP BY `Nome completo funcionário 1`,
+`Salário funcionário 1`,
+`Telefone funcionário 1`,
+`Nome completo funcionário 2`,
+`Salário funcionário 2`,
+`Telefone funcionário 2`
 HAVING `Nome completo funcionário 1` <> `Nome completo funcionário 2`
 ORDER BY `Nome completo funcionário 1` ASC, `Nome completo funcionário 2` ASC;

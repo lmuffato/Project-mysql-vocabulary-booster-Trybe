@@ -1,4 +1,9 @@
-SELECT *
+SELECT `Nome completo funcionário 1`,
+`Salário funcionário 1`,
+`Telefone funcionário 1`,
+`Nome completo funcionário 2`,
+`Salário funcionário 2`,
+`Telefone funcionário 2`
 FROM (
   SELECT CONCAT(E1.FIRST_NAME, ' ', E1.LAST_NAME) AS `Nome completo funcionário 1`,
   E1.SALARY `Salário funcionário 1`,

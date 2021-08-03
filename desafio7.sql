@@ -11,4 +11,3 @@ WHERE
 ORDER BY
   `Nome completo`,
   `Data de início`;
-  

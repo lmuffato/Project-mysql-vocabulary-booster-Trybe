@@ -10,6 +10,6 @@ WHERE
 AND
     c1.customerID <> c2.customerId
 GROUP BY
-    1
+    1, 2
 ORDER BY
     1;

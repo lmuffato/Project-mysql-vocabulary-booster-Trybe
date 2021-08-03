@@ -18,4 +18,3 @@ ORDER BY
     ' ',
     employees.LAST_NAME),
     job_history.START_DATE;
-    

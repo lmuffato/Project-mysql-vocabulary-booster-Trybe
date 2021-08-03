@@ -8,4 +8,4 @@ SELECT
 FROM hr.employees AS t1
 INNER JOIN hr.employees AS t2 ON t1.JOB_ID = t2.JOB_ID
 AND t1.EMPLOYEE_ID <> t2.EMPLOYEE_ID
-ORDER BY 'Nome completo funcionário 1', 'Nome completo funcionário 2';
+ORDER BY `Nome completo funcionário 1`, `Nome completo funcionário 2`;

@@ -1,9 +1,8 @@
-USE hr;
 SELECT
 UCASE(CONCAT(EmpTab.FIRST_NAME, ' ', EmpTab.LAST_NAME)) AS 'Nome completo',
 HistTab.START_DATE AS 'Data de início',
 EmpTab.SALARY AS 'Salário'
-FROM employees AS EmpTab
-INNER JOIN job_history AS HistTab ON e.EMPLOYEE_ID = HistTab.EMPLOYEE_ID
+FROM hr.employees AS EmpTab
+INNER JOIN hr.job_history AS HistTab ON e.EMPLOYEE_ID = HistTab.EMPLOYEE_ID
 WHERE MONTH(HistTab.START_DATE) BETWEEN 1 AND 3 
 ORDER BY UCASE(CONCAT(EmpTab.FIRST_NAME, ' ', EmpTab.LAST_NAME)), HistTab.START_DATE ASC;

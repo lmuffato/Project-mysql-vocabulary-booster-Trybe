@@ -3,10 +3,9 @@ SELECT
     c1.country País,
     COUNT(c2.country) 'Número de compatriotas'
 FROM
-    w3schools.customers c1
-INNER JOIN
+    w3schools.customers c1,
     w3schools.customers c2
-ON
+WHERE
     c1.country = c2.country
 AND
     c1.customerID <> c2.customerId

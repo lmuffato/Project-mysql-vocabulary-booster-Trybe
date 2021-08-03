@@ -8,4 +8,3 @@ BEGIN
 END $$
 
 DELIMITER ;
-

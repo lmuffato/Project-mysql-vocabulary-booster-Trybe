@@ -10,8 +10,8 @@ USING
     (CustomerID)
 INNER JOIN
     w3schools.shippers s
-ON
-    o.ShipperID = s.ShipperID
+USING
+    (ShipperID)
 WHERE
     s.ShipperName IN ('Speedy Express', 'United Package')
 ORDER BY

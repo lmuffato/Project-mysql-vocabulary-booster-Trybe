@@ -11,7 +11,4 @@ GROUP BY
   order_details.ProductID
 HAVING
   `Média` > 20.00
-ORDER BY
-  `Média` ASC,
-  Produto;
-  
+ORDER BY `Média` ASC, Produto;

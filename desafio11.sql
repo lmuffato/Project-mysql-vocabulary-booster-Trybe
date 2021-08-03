@@ -11,6 +11,4 @@ WHERE
 GROUP BY
   `Nome`,
   customers_1.Country
-ORDER BY
-  `Nome`;
-  
+ORDER BY `Nome`;

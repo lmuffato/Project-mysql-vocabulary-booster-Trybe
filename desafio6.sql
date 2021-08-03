@@ -10,4 +10,5 @@ ON employees.employee_id=history_JOB.employee_id
 INNER JOIN hr.jobs AS jobs
 ON history_JOB.job_id=jobs.job_id
 INNER JOIN hr.departments AS departments
-ON departments.department_id=history_JOB.department_id;
+ON departments.department_id=history_JOB.department_id
+ORDER BY `Nome completo` DESC, Cargo ASC;

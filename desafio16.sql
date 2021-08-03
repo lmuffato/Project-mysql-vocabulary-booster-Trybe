@@ -1,5 +1,6 @@
+USE hr;
 DELIMITER $$
-
+DROP FUNCTION IF EXISTS buscar_quantidade_de_empregos_por_funcionario;
 CREATE FUNCTION buscar_quantidade_de_empregos_por_funcionario(email VARCHAR(100))
 RETURNS INT READS SQL DATA
 BEGIN
@@ -15,7 +16,6 @@ BEGIN
     
     RETURN quantidade_emprego;
 END $$
-
 DELIMITER ;
 
 -- uso INT pq retorno um numero inteiro e READS SQL DATA pq estou lendo dados do mysql

@@ -17,7 +17,3 @@ BEGIN
     RETURN quantidade_emprego;
 END $$
 DELIMITER ;
-
--- uso INT pq retorno um numero inteiro e READS SQL DATA pq estou lendo dados do mysql
--- uso o inner join para comparar as tabelas e contar quantas vezes o jh.EMPLOYEE_ID se repete
--- uso o LIKE porque funcinoa melhor para VARCHAR('string') do que o =

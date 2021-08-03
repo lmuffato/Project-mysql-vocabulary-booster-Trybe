@@ -1,4 +1,5 @@
 USE hr;
+DROP PROCEDURE IF EXISTS exibir_historico_completo_por_funcionario;
 DELIMITER $$
 
 CREATE PROCEDURE exibir_historico_completo_por_funcionario(IN email VARCHAR(100))
@@ -11,7 +12,8 @@ BEGIN
   INNER JOIN hr.employees e ON e.EMPLOYEE_ID = jh.EMPLOYEE_ID
   INNER JOIN hr.jobs j ON j.JOB_ID = jh.JOB_ID
   INNER JOIN hr.departments d ON d.DEPARTMENT_ID = jh.DEPARTMENT_ID
-  WHERE e.EMAIL = email;
+  WHERE e.EMAIL = email
+  ORDER BY `Cargo`;
 END $$
 
 DELIMITER ;

@@ -15,7 +15,7 @@ Os resultados devem estar ordenados pela variação salarial em ordem crescente.
 Em caso de empate na variação, os resultados devem ser ordenados pelo nome do cargo em ordem alfabética. */
 
 -- Obtive ajuda de meu grande amigo Rodrigo Queiroz - Turma 10 A na interpretação do desafio
--- Nome 
+-- Dica para usar backticks ao criar o alias da tabela e usá-lo em outros pontos da query obtida com Rodrigo Queiroz - Turma 10 A
 SELECT
 JOB_TITLE AS `Cargo`,
 MAX_SALARY - MIN_SALARY AS `Variação Salarial`,

@@ -6,3 +6,7 @@ node_modules/
 #Docker
 docker-compose.yaml
 db
+
+#Backup
+hr_backup_.sql
+w3schools_backup_.sql

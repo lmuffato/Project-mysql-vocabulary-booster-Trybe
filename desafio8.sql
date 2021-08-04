@@ -8,3 +8,4 @@ WHERE shippers.ShipperID != 3
 ORDER BY customers.ContactName,
   shippers.ShipperName,
   DATE(orders.OrderDate) ASC;
+  

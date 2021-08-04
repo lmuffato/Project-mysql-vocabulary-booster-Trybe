@@ -7,4 +7,3 @@ FROM hr.jobs AS jobs
 GROUP BY employees.JOB_ID
 ORDER BY (MAX_SALARY - MIN_SALARY) ASC,
   jobs.JOB_TITLE;
-  

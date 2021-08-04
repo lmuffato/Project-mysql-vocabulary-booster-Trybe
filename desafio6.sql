@@ -8,4 +8,3 @@ FROM hr.employees AS Employees
   INNER JOIN hr.departments AS Departments ON History.DEPARTMENT_ID = Departments.DEPARTMENT_ID
 ORDER BY CONCAT(Employees.FIRST_NAME, ' ', Employees.LAST_NAME) DESC,
   Jobs.JOB_TITLE;
-  

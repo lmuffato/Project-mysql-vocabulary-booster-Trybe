@@ -10,4 +10,3 @@ ORDER BY UCASE(
     CONCAT(Employees.FIRST_NAME, ' ', Employees.LAST_NAME)
   ),
   History.START_DATE ASC;
-  

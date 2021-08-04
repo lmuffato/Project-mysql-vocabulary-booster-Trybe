@@ -11,4 +11,3 @@ FROM hr.jobs AS jobs
 GROUP BY employees.JOB_ID
 ORDER BY ROUND(AVG(employees.SALARY), 2),
   jobs.JOB_TITLE;
-  

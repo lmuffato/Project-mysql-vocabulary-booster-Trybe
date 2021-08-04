@@ -1,10 +1,13 @@
-SELECT products.ProductName AS ProductName,
-  MIN(order_details.Quantity) 'Mínima',
-  MAX(order_details.Quantity) AS 'Máxima',
-  ROUND(AVG(order_details.Quantity), 2) AS 'Média'
-FROM w3schools.order_details AS order_details
-  INNER JOIN w3schools.products AS products ON order_details.ProductID = products.ProductID
-GROUP BY order_details.ProductID
+SELECT (
+    SELECT ProductName
+    FROM w3schools.products
+    WHERE o.ProductID = ProductID
+  ) AS `Produto`,
+  MIN(Quantity) AS `Mínima`,
+  MAX(Quantity) AS `Máxima`,
+  ROUND(AVG(Quantity), 2) AS `Média`
+FROM w3schools.order_details as o
+GROUP BY o.ProductID
 HAVING `Média` > 20.00
 ORDER BY `Média` ASC,
-  ProductName;
+  `Produto` ASC;

@@ -1,8 +1,8 @@
 DELIMITER $$
 CREATE TRIGGER orders_insert
 BEFORE INSERT ON orders
- FOR EACH ROW
+FOR EACH ROW
 BEGIN
-	SET NEW.orderDate = NOW();
+SET NEW.orderDate = NOW();
 END $$
 DELIMITER ;

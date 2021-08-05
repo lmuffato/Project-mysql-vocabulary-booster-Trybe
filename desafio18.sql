@@ -4,7 +4,7 @@ CONCAT(
 DAY(tjh.start_date),
 "/", MONTH(tjh.start_date),
 "/", YEAR(tjh.start_date)
-)AS `Data de início do cargo`,
+)AS `Data de início`,
 CONCAT(
 DAY(tjh.end_date),
 "/", MONTH(tjh.end_date),

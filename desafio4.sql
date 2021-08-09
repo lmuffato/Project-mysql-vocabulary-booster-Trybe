@@ -17,4 +17,5 @@ GROUP BY
   Cargo
 ORDER BY
   `Média salarial`,
-   Cargo;
+    Cargo;
+   

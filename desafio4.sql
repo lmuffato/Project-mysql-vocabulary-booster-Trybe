@@ -14,8 +14,8 @@ FROM
   hr.employees AS x
   INNER JOIN hr.jobs AS y ON x.JOB_ID = y.JOB_ID
 GROUP BY
-  Cargo
+    Cargo
 ORDER BY
-  `Média salarial`,
+    `Média salarial`,
     Cargo;
    

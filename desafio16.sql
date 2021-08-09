@@ -11,5 +11,4 @@ WHERE e.EMAIL = email
 INTO jobs_total;
 RETURN jobs_total;
 END $$
-
 DELIMITER ;

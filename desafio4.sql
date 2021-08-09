@@ -1,5 +1,5 @@
 SELECT
-  y.JOB_TITLE AS `Cargo`,
+  y.JOB_TITLE AS 'Cargo',
   ROUND(AVG(x.SALARY), 2) AS `Média salarial`,
   CASE
     WHEN ROUND(AVG(x.SALARY), 2) BETWEEN 2000

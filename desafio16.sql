@@ -12,3 +12,5 @@ RETURN jobs_total;
 END $$
 
 DELIMITER ;
+
+SELECT hr.buscar_quatidade_de_empregos_por_funcionario("NKOCHHAR");

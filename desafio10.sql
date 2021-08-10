@@ -1,4 +1,4 @@
--- challenge 10;
+-- challenge;
 
 SELECT ProductName AS Produto,
 MIN(Quantity) AS Mínima,

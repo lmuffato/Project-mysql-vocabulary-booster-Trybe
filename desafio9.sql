@@ -8,4 +8,4 @@ ON orders.EmployeeID=employees.EmployeeID
 INNER JOIN w3schools.order_details AS orderDetails
 ON orderDetails.OrderID=orders.OrderID
 GROUP BY `Nome completo`
-ORDER BY `Total de pedidos` ASC;
+ORDER BY `Total de pedidos`;

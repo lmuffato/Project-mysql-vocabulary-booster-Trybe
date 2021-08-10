@@ -11,4 +11,3 @@ AND 10500 THEN 'Sênior'
 WHEN ROUND(AVG(x.SALARY), 2) > 10500 THEN 'CEO'
 END AS Senioridade
 FROM hr.employees AS x INNER JOIN hr.jobs AS y ON x.JOB_ID = y.JOB_ID GROUP BY Cargo ORDER BY `Média salarial`, Cargo;
-   

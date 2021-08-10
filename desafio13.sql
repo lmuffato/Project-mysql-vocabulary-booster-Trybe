@@ -1,4 +1,4 @@
--- challenge 13;
+-- challenge;
 
 SELECT ProductName AS Produto,
 Price AS Preço

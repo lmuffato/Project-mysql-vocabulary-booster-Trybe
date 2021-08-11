@@ -1,4 +1,4 @@
--- challenge 9;
+-- challenge 09;
 
 SELECT CONCAT(FirstName, ' ', LastName) AS `Nome completo`,
 COUNT(employees.EmployeeID) AS `Total de pedidos`

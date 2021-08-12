@@ -10,6 +10,7 @@ ON job_history.DEPARTMENT_ID = departments.DEPARTMENT_ID
 AND job_history.JOB_ID = jobs.JOB_ID
 AND job_history.EMPLOYEE_ID = employees.EMPLOYEE_ID
 ORDER BY concat(employees.FIRST_NAME, ' ', employees.LAST_NAME) DESC, JOB_TITLE ASC;
+
 -- SELECT concat(t1.FIRST_NAME, ' ', t1.LAST_NAME) AS 'Nome completo',
 -- t2.JOB_TITLE AS 'Cargo',
 -- t3.START_DATE AS 'Data de início do cargo',

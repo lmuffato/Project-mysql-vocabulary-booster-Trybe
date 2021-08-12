@@ -1,5 +1,6 @@
 -- challenge 18;
 -- https://stackoverflow.com/questions/10637581/mysql-date-format-dd-mm-yyyy-select-query
+-- https://www.dirceuresende.com/blog/sql-server-como-calcular-a-diferenca-em-anos-idade-entre-duas-datas-utilizando-tsql-ou-clr/
 
 SELECT CONCAT(FIRST_NAME, ' ', LAST_NAME) AS `Nome completo`,
 DATE_FORMAT(job_history.START_DATE, '%d/%m/%y') AS `Data de início`,

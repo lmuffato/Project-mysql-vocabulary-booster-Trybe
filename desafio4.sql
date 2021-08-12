@@ -8,4 +8,5 @@ END AS 'Senioridade'
 FROM hr.jobs AS t1
 INNER JOIN hr.employees AS t2
 ON t1.job_id = t2.job_id
-GROUP BY t1.job_title;
+GROUP BY t1.job_title
+ORDER BY ROUND(avg(t2.salary), 2), job_title;

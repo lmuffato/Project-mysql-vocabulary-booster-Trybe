@@ -1,7 +1,7 @@
 select
 wcustomers.contactname 'Nome de contato',
 wshippers.ShipperName 'Empresa que fez o envio',
-wOrders.OrderDate 'Data do pedido'
+wOrders.OrderDate `Data do pedido`
 from 
 w3schools.customers wcustomers
 inner join w3schools.orders wOrders

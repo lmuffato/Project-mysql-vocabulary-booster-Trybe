@@ -1,4 +1,5 @@
-SELECT jobs.JOB_TITLE AS 'Cargo', ROUND(AVG(employees.SALARY), 2) AS 'Média salarial',
+SELECT jobs.JOB_TITLE AS 'Cargo',
+ROUND(AVG(employees.SALARY), 2) AS 'Média salarial',
 CASE 
     WHEN ROUND(AVG(employees.SALARY))>=2000 AND ROUND(AVG(employees.SALARY))<=5800
     THEN 'Júnior'

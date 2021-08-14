@@ -1,6 +1,6 @@
 select
 CONCAT(emp.firstname, ' ', emp.lastName) 'Nome completo',
-count(ord.OrderID) 'Total de pedido'
+count(ord.OrderID) 'Total de pedidos'
 from 
 w3schools.employees emp
 inner join w3schools.orders ord

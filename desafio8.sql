@@ -13,4 +13,3 @@ OrderDate AS `Data do pedido`
 FROM w3schools.orders
 WHERE ShipperID IN (1,2)
 ORDER BY `Nome de contato`, `Empresa que fez o envio`, `Data do pedido`;
-  

@@ -1,0 +1,14 @@
+SELECT
+  CONCAT(EMP.FIRST_NAME, ' ', EMP.LAST_NAME) AS 'Nome completo',
+  JOBS.JOB_TITLE AS 'Cargo',
+  JOBHIS.START_DATE AS "Data de início do cargo",
+  DEP.DEPARTMENT_NAME AS "Departamento"
+FROM
+  hr.employees AS EMP
+      INNER JOIN
+  hr.jobs AS JOBS ON JOBS.JOB_ID = JOBHIS.JOB_ID
+    INNER JOIN 
+  hr.job_history AS JOBHIS ON JOBHIS.EMPLOYEE_ID = EMP.EMPLOYEE_ID
+    INNER JOIN
+  hr.departments AS DEP ON DEP.DEPARTMENT_ID = JOBHIS.DEPARTMENT_ID
+ORDER BY `Nome Completo` DESC, Cargo ASC;

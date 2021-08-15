@@ -8,7 +8,7 @@ BEGIN
     INNER JOIN hr.employees AS t2
     ON t1.job_id = t2.job_id
     WHERE t1.job_title = cargo
-  	GROUP BY t1.job_title;
+GROUP BY t1.job_title;
 END $$
 
 DELIMITER ;

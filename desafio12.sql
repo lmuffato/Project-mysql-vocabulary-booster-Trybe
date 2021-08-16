@@ -9,4 +9,4 @@ from hr.employees emp
 inner join hr.employees emp1
 on emp.job_id = emp1.job_id
 and emp.employee_id <> emp1.employee_id
-order by `Salário funcionário 1`,`Telefone funcionário 2` ;
+order by CONCAT(emp.first_name, ' ',emp.last_Name),CONCAT(emp1.first_name, ' ',emp1.last_Name) ;

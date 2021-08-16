@@ -8,5 +8,5 @@ SELECT JOB_TITLE AS `Cargo`,
     WHEN (MAX_SALARY > 30000) THEN "Altíssimo"
     ELSE "não especificado"
   END AS `Nível`
-  FROM hr.jobs AS j
+  FROM hr.jobs
   ORDER BY `Cargo`;

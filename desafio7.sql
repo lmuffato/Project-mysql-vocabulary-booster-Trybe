@@ -1,0 +1,7 @@
+SELECT CONCAT(UPPER(e.FIRST_NAME), ' ', UPPER(e.LAST_NAME)) AS 'Nome completo',
+jh.START_DATE AS 'Data de início',
+e.SALARY AS 'Salário'
+FROM hr.job_history AS jh
+INNER JOIN hr.employees AS e ON jh.EMPLOYEE_ID = e.EMPLOYEE_ID
+WHERE MONTH(START_DATE) BETWEEN '01' AND '03'
+ORDER BY 1, 2;

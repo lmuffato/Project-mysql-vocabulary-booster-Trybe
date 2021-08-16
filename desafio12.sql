@@ -1,5 +1,5 @@
 select
-CONCAT(emp.first_name, ' ',emp.last_Name) 'Nome completo  funcionário 1',
+CONCAT(emp.first_name, ' ',emp.last_Name) 'Nome completo funcionário 1',
 emp.SALARY 'Salário funcionário 1',
 emp.PHONE_NUMBER 'Telefone funcionário 1',
 CONCAT(emp1.first_name, ' ',emp1.last_Name) 'Nome completo funcinário 2',

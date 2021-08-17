@@ -1,6 +1,5 @@
 USE hr;
 DELIMITER $$
-
 CREATE PROCEDURE buscar_media_por_cargo(IN cargo VARCHAR(100))
 BEGIN
   SELECT
@@ -16,5 +15,4 @@ BEGIN
     GROUP BY j.JOB_TITLE) t
 WHERE t.Cargo = cargo;
 END $$
-
 DELIMITER ;

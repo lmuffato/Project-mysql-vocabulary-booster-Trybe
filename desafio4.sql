@@ -20,4 +20,3 @@ GROUP BY
   e.JOB_ID
 ORDER BY
   `Média salarial` ASC, `Cargo` ASC;
-  

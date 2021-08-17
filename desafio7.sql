@@ -5,4 +5,4 @@ from hr.job_history as h
 inner join hr.employees as e on h.EMPLOYEE_ID = e.EMPLOYEE_ID
 inner join hr.jobs as j on h.JOB_ID = j.JOB_ID
 where month(h.START_DATE) between 1 and 3
-order by concat(e.FIRST_NAME, ' ', e.LAST_NAME), j.JOB_TITLE;
+order by concat(e.FIRST_NAME, ' ', e.LAST_NAME), h.START_DATE;

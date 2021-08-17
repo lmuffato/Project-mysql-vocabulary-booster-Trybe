@@ -10,7 +10,7 @@ INNER JOIN hr.employees AS e
   ON e.EMPLOYEE_ID = h.EMPLOYEE_ID
 INNER JOIN hr.jobs AS j
   ON j.JOB_ID = h.JOB_ID
- WHERE MONTH(h.START_DATE) BETWEEN 1 AND 3
+  WHERE MONTH(h.START_DATE) BETWEEN 1 AND 3
 ORDER BY
   `Nome completo` ASC,
   `Data de início` ASC;

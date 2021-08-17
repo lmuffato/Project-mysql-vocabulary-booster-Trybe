@@ -1,8 +1,8 @@
 select
-concat(func1.first_name, '', func1.last_name) 'Nome completo funcionário 1',
+concat(func1.first_name, ' ', func1.last_name) 'Nome completo funcionário 1',
 func1.salary 'Salário funcionário 1',
 func1.phone_number 'Telefone funcionário 1',
-concat(func2.first_name, '', func2.last_name) 'Nome completo funcionário 2',
+concat(func2.first_name, ' ', func2.last_name) 'Nome completo funcionário 2',
 func2.salary 'Salário funcionário 2',
 func2.phone_number 'Telefone funcionário 2'
 from hr.employees func1

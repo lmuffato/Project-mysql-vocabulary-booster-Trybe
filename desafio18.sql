@@ -3,8 +3,8 @@ empregadas, mostrando as datas de início e de saída, assim como os anos
 que ela ficou nesse cargo. */
 SELECT
   CONCAT(emp.FIRST_NAME, ' ', emp.LAST_NAME) AS `Nome completo`,
-  his.START_DATE AS `Data de início`,
-  his.END_DATE AS `Data de rescisão`,
+  DATE_FORMAT(his.START_DATE, '%d/%m/%Y') AS `Data de início`,
+  DATE_FORMAT(his.END_DATE, '%d/%m/%Y') AS `Data de rescisão`,
   -- job.JOB_TITLE AS `Titulo`,
   ROUND(DATEDIFF(his.END_DATE, his.START_DATE) / 365, 2)  AS `Anos trabalhados`
 FROM

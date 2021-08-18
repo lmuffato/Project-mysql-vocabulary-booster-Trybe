@@ -1,4 +1,4 @@
-
+use hr
 delimiter $$
 create function BuscarQuantidadeEmpregosFuncionario(email_employeer varchar(50))
 returns int reads sql data begin

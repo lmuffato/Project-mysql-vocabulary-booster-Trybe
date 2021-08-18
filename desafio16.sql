@@ -16,4 +16,3 @@ INTO qtd;
 RETURN qtd;
 END $$
 DELIMITER ;
-

@@ -4,11 +4,10 @@ retorne a quantidade de empregos presentes em seu histórico */
 USE hr;
 DELIMITER $$
 
-CREATE PROCEDURE
-  buscar_quantidade_de_empregos_por_funcionario(
-    IN email VARCHAR(100)
-  )
+CREATE FUNCTION buscar_quantidade_de_empregos_por_funcionario(email VARCHAR(50))
+RETURNS INT READS SQL DATA
 BEGIN
+  DECLARE quantidade INT;
 SELECT
     COUNT(his.JOB_ID)
   FROM
@@ -16,9 +15,11 @@ SELECT
     hr.employees AS emp
   WHERE
     his.EMPLOYEE_ID = emp.EMPLOYEE_ID AND
-    emp.EMAIL = email;
+    emp.EMAIL = email
+INTO quantidade;
+RETURN quantidade;  
 END $$
 
 DELIMITER;
 
--- CALL buscar_quantidade_de_empregos_por_funcionario("NKOCHHAR");
+-- SELECT buscar_quantidade_de_empregos_por_funcionario("NKOCHHAR");

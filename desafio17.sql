@@ -1,8 +1,8 @@
 delimiter $$
 create trigger triggerBeforeInsert
-	before insert on orders
-    for each row
+before insert on orders
+  for each row
 begin
-	set new.orderDate = date(now());
+set new.orderDate = date(now());
 end
 $$ delimiter ;

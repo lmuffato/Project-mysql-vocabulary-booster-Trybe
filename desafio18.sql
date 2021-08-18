@@ -5,7 +5,7 @@ SELECT
   CONCAT(emp.FIRST_NAME, ' ', emp.LAST_NAME) AS `Nome completo`,
   DATE_FORMAT(his.START_DATE, '%d/%m/%Y') AS `Data de início`,
   DATE_FORMAT(his.END_DATE, '%d/%m/%Y') AS `Data de rescisão`,
-  -- job.JOB_TITLE AS `Titulo`,
+  -- job.JOB_TITLE AS `Cargo`,
   ROUND(DATEDIFF(his.END_DATE, his.START_DATE) / 365, 2)  AS `Anos trabalhados`
 FROM
   hr.employees AS emp

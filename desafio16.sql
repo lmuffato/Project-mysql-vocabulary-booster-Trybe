@@ -6,7 +6,7 @@ DELIMITER $$
 
 CREATE PROCEDURE
   buscar_quantidade_de_empregos_por_funcionario(
-    IN nomeCargo VARCHAR(100)
+    IN email VARCHAR(100)
   )
 BEGIN
 SELECT
@@ -16,7 +16,7 @@ SELECT
     hr.employees AS emp
   WHERE
     his.EMPLOYEE_ID = emp.EMPLOYEE_ID AND
-    emp.EMAIL = "NKOCHHAR";
+    emp.EMAIL = email;
 END $$
 
 DELIMITER;

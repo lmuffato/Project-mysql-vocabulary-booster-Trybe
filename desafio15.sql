@@ -16,7 +16,7 @@ BEGIN
     jobs AS job
   WHERE
     emp.JOB_ID = job.JOB_ID AND
-    JOB_TITLE = nomeCargo
+    job.JOB_TITLE = nomeCargo
   GROUP BY JOB_TITLE;
 END $$
 

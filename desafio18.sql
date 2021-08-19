@@ -11,3 +11,4 @@ INNER JOIN hr.job_history jobhist
 
 ORDER BY
   `Nome completo`, `Anos trabalhados`;
+  

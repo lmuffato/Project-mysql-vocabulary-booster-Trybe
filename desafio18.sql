@@ -1,11 +1,13 @@
-select
-concat(emp.First_name, ' ', emp.Last_name) 'Nome completo',
-date_format(histo.start_date, '%d/%m/%y') 'Data de início',
-date_format(histo.end_date, '%d/%m/%y') 'Data de rescisão',
-round(datediff(histo.end_date, histo.start_date)/ 365,2) 'Anos trabalhados'
-from
-hr.employees emp
-inner join hr.job_history histo
-on emp.employee_id = histo.employee_id
-order by
-concat(emp.First_name, ' ', emp.Last_name), round(datediff(histo.end_date, histo.start_date)/ 365,2);
+SELECT
+  CONCAT(emp.FIRST_NAME, ' ', emp.LAST_NAME) 'Nome completo',
+  DATE_FORMAT(jobhist.START_DATE, '%d/%m/%Y') 'Data de início',
+  DATE_FORMAT(jobhist.END_DATE, '%d/%m/%Y') 'Data de rescisão',
+  
+  ROUND(DATEDIFF(jobhist.END_DATE, jobhist.START_DATE) / 365, 2) `Anos trabalhados`
+FROM
+  hr.employees emp
+INNER JOIN hr.job_history jobhist
+  ON emp.EMPLOYEE_ID = jobhist.EMPLOYEE_ID
+
+ORDER BY
+  `Nome completo`, `Anos trabalhados`;

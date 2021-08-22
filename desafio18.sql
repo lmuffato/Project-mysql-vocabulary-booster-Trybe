@@ -3,9 +3,9 @@ SELECT
     ' ',
     employee.last_name) AS 'Nome completo',
     DATE_FORMAT(job.start_date,
-    '%d/%m/%Y') AS 'Data de in�cio',
+    '%d/%m/%Y') AS 'Data de início',
     DATE_FORMAT(job.end_date,
-    '%d/%m/%Y') AS 'Data de rescis�o',
+    '%d/%m/%Y') AS 'Data de rescisão',
     ROUND(DATEDIFF(job.end_date,
     job.start_date)/365,
     2) AS 'Anos trabalhados' 

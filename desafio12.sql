@@ -18,4 +18,3 @@ WHERE
 ORDER BY
     `Nome completo funcionário 1` ASC,
     `Nome completo funcionário 2` ASC;
-    

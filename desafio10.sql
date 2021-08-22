@@ -1,6 +1,3 @@
-SELECT * FROM products;
-
-SELECT * FROM order_details;
 SELECT products.ProductName AS `Produto`,
 MIN(order_details.Quantity) AS `Mínima`,
 MAX(order_details.Quantity) AS `Máxima`,

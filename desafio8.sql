@@ -1,7 +1,3 @@
-SELECT * FROM w3schools.orders;
-SELECT * FROM w3schools.customers;
-SELECT * FROM w3schools.shippers;
-
 SELECT customers.ContactName AS `Nome de contato`,
 shippers.ShipperName AS `Empresa que fez o envio`,
 orders.OrderDate AS `Data do Pedido`

@@ -8,5 +8,4 @@ INNER JOIN hr.job_history AS historico_cargos
   ON empregados.EMPLOYEE_ID = historico_cargos.EMPLOYEE_ID
 INNER JOIN hr.departments AS departamento
   ON empregados.DEPARTMENT_ID = departamento.DEPARTMENT_ID
-GROUP BY `Nome Completo`
-ORDER BY `Nome Completo` DESC, Cargo;
+ORDER BY `Nome Completo` DESC, `Cargo`;

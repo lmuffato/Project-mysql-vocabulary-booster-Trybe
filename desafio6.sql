@@ -9,4 +9,4 @@ INNER JOIN hr.jobs AS employee_job
 ON employee_history.JOB_ID = employee_job.JOB_ID
 INNER JOIN hr.departments AS employee_department
 ON employee_history.DEPARTMENT_ID = employee_department.DEPARTMENT_ID
-ORDER BY CONCAT(employee.FIRST_NAME, ' ', employee.LAST_NAME) DESC, job.JOB_TITLE;
+ORDER BY CONCAT(employee.FIRST_NAME, ' ', employee.LAST_NAME) DESC, employee_job.JOB_TITLE;

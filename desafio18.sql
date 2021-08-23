@@ -1,0 +1,5 @@
+SELECT CONCAT(FIRST_NAME, ' ', LAST_NAME) AS 'Nome completo', DATE_FORMAT(j.START_DATE, '%d/%m/%Y') AS 'Data de início', DATE_FORMAT(j.END_DATE, '%d/%m/%Y') AS 'Data de rescisão', CONVERT(DATEDIFF(j.END_DATE, j.START_DATE) / 365, DECIMAL(10,2)) AS 'Anos trabalhados'
+FROM employees
+INNER JOIN job_history AS j
+ON employees.EMPLOYEE_ID = j.EMPLOYEE_ID
+ORDER BY CONCAT(FIRST_NAME, ' ', LAST_NAME), CONVERT(DATEDIFF(j.END_DATE, j.START_DATE) / 365, DECIMAL(10,2)) ASC;

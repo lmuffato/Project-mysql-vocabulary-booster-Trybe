@@ -6,7 +6,7 @@ CASE
     WHEN ROUND(AVG(employees.SALARY))>5800 AND ROUND(AVG(employees.SALARY))<=7500
     THEN 'Pleno'
     WHEN ROUND(AVG(employees.SALARY))>7500 AND ROUND(AVG(employees.SALARY))<=10500
-    THEN 'Senior'
+    THEN 'Sênior'
     WHEN ROUND(AVG(employees.SALARY))>10500 THEN 'CEO'
     END AS 'Senioridade'
 FROM hr.jobs AS jobs

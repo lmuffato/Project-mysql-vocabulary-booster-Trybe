@@ -1,11 +1,10 @@
-USE hr;
 DELIMITER $$
-CREATE PROCEDURE busca_media_por_cargo(IN job VARCHAR(200))
+CREATE PROCEDURE busca_media_por_cargo(job VARCHAR(200))
 BEGIN
-    SELECT AVG(func.SALARY) AS `Média salarial`
-    WHERE jobs.JOB_TITLE = job
-    FROM employees func
-    INNER JOIN jobs jobs
+    SELECT ROUND(AVG(func.SALARY), 2) AS `Média salarial`
+    FROM hr.employees func
+    INNER JOIN hr.jobs jobs
       ON func.JOB_ID = jobs.JOB_ID
+    WHERE jobs.JOB_TITLE = job;
 END $$
 DELIMITER;
